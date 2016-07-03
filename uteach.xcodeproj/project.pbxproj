@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D0085881D28151700CF4870 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085871D28151700CF4870 /* AppDelegate.swift */; };
+		1D0085901D28151700CF4870 /* uteach.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D00858E1D28151700CF4870 /* uteach.xcdatamodeld */; };
+		1D0085921D28151700CF4870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0085911D28151700CF4870 /* Assets.xcassets */; };
+		1D0085951D28151700CF4870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0085931D28151700CF4870 /* LaunchScreen.storyboard */; };
+		1D0085A21D281D8200CF4870 /* UTNavigationFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085A11D281D8200CF4870 /* UTNavigationFlowManager.swift */; };
+		1D0085A61D2844D200CF4870 /* UTSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085A41D2844D200CF4870 /* UTSplashViewController.swift */; };
+		1D0085A71D2844D200CF4870 /* UTSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D0085841D28151600CF4870 /* uteach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uteach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0085871D28151700CF4870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
+		1D00858F1D28151700CF4870 /* uteach.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = uteach.xcdatamodel; sourceTree = "<group>"; };
+		1D0085911D28151700CF4870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D0085941D28151700CF4870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D0085961D28151700CF4870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D0085A11D281D8200CF4870 /* UTNavigationFlowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTNavigationFlowManager.swift; sourceTree = "<group>"; };
+		1D0085A41D2844D200CF4870 /* UTSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTSplashViewController.swift; sourceTree = "<group>"; };
+		1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTSplashViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D0085811D28151600CF4870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D00857B1D28151600CF4870 = {
+			isa = PBXGroup;
+			children = (
+				1D0085861D28151700CF4870 /* uteach */,
+				1D0085851D28151600CF4870 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D0085851D28151600CF4870 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D0085841D28151600CF4870 /* uteach.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D0085861D28151700CF4870 /* uteach */ = {
+			isa = PBXGroup;
+			children = (
+				1D00859C1D281C1B00CF4870 /* controllers */,
+				1D00859D1D281C1B00CF4870 /* models */,
+				1D00859F1D281C1B00CF4870 /* views */,
+				1D0085911D28151700CF4870 /* Assets.xcassets */,
+				1D0085931D28151700CF4870 /* LaunchScreen.storyboard */,
+				1D0085961D28151700CF4870 /* Info.plist */,
+				1D00858E1D28151700CF4870 /* uteach.xcdatamodeld */,
+			);
+			path = uteach;
+			sourceTree = "<group>";
+		};
+		1D00859C1D281C1B00CF4870 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D0085A31D2844BD00CF4870 /* Splash */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		1D00859D1D281C1B00CF4870 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1D0085A01D281C5000CF4870 /* AppDelegate */,
+				1D00859E1D281C1B00CF4870 /* NavigationFlowManager */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		1D00859E1D281C1B00CF4870 /* NavigationFlowManager */ = {
+			isa = PBXGroup;
+			children = (
+				1D0085A11D281D8200CF4870 /* UTNavigationFlowManager.swift */,
+			);
+			path = NavigationFlowManager;
+			sourceTree = "<group>";
+		};
+		1D00859F1D281C1B00CF4870 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		1D0085A01D281C5000CF4870 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D0085871D28151700CF4870 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1D0085A31D2844BD00CF4870 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				1D0085A41D2844D200CF4870 /* UTSplashViewController.swift */,
+				1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D0085831D28151600CF4870 /* uteach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D0085991D28151700CF4870 /* Build configuration list for PBXNativeTarget "uteach" */;
+			buildPhases = (
+				1D0085801D28151600CF4870 /* Sources */,
+				1D0085811D28151600CF4870 /* Frameworks */,
+				1D0085821D28151600CF4870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uteach;
+			productName = uteach;
+			productReference = 1D0085841D28151600CF4870 /* uteach.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D00857C1D28151600CF4870 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Santiago Lazzari";
+				TargetAttributes = {
+					1D0085831D28151600CF4870 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Y8MVXZDBG2;
+					};
+				};
+			};
+			buildConfigurationList = 1D00857F1D28151600CF4870 /* Build configuration list for PBXProject "uteach" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D00857B1D28151600CF4870;
+			productRefGroup = 1D0085851D28151600CF4870 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D0085831D28151600CF4870 /* uteach */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D0085821D28151600CF4870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D0085951D28151700CF4870 /* LaunchScreen.storyboard in Resources */,
+				1D0085921D28151700CF4870 /* Assets.xcassets in Resources */,
+				1D0085A71D2844D200CF4870 /* UTSplashViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D0085801D28151600CF4870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D0085881D28151700CF4870 /* AppDelegate.swift in Sources */,
+				1D0085901D28151700CF4870 /* uteach.xcdatamodeld in Sources */,
+				1D0085A61D2844D200CF4870 /* UTSplashViewController.swift in Sources */,
+				1D0085A21D281D8200CF4870 /* UTNavigationFlowManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D0085931D28151700CF4870 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D0085941D28151700CF4870 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D0085971D28151700CF4870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D0085981D28151700CF4870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D00859A1D28151700CF4870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = uteach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uteachapp.UTeach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1D00859B1D28151700CF4870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = uteach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uteachapp.UTeach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D00857F1D28151600CF4870 /* Build configuration list for PBXProject "uteach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D0085971D28151700CF4870 /* Debug */,
+				1D0085981D28151700CF4870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D0085991D28151700CF4870 /* Build configuration list for PBXNativeTarget "uteach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D00859A1D28151700CF4870 /* Debug */,
+				1D00859B1D28151700CF4870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D00858E1D28151700CF4870 /* uteach.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D00858F1D28151700CF4870 /* uteach.xcdatamodel */,
+			);
+			currentVersion = 1D00858F1D28151700CF4870 /* uteach.xcdatamodel */;
+			path = uteach.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1D00857C1D28151600CF4870 /* Project object */;
+}
