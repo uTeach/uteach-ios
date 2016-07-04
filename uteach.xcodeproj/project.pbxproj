@@ -14,6 +14,8 @@
 		1D0085A21D281D8200CF4870 /* UTNavigationFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085A11D281D8200CF4870 /* UTNavigationFlowManager.swift */; };
 		1D0085A61D2844D200CF4870 /* UTSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085A41D2844D200CF4870 /* UTSplashViewController.swift */; };
 		1D0085A71D2844D200CF4870 /* UTSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */; };
+		1D0085CB1D29DBD700CF4870 /* UTUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085CA1D29DBD700CF4870 /* UTUser.swift */; };
+		1D0085CE1D29DC6400CF4870 /* UTTeacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085CD1D29DC6400CF4870 /* UTTeacher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1D0085A11D281D8200CF4870 /* UTNavigationFlowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTNavigationFlowManager.swift; sourceTree = "<group>"; };
 		1D0085A41D2844D200CF4870 /* UTSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTSplashViewController.swift; sourceTree = "<group>"; };
 		1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTSplashViewController.xib; sourceTree = "<group>"; };
+		1D0085CA1D29DBD700CF4870 /* UTUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTUser.swift; sourceTree = "<group>"; };
+		1D0085CD1D29DC6400CF4870 /* UTTeacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTTeacher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 		1D00859D1D281C1B00CF4870 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				1D0085CC1D29DC0200CF4870 /* Picture */,
+				1D0085C91D29DBC300CF4870 /* User */,
 				1D0085A01D281C5000CF4870 /* AppDelegate */,
 				1D00859E1D281C1B00CF4870 /* NavigationFlowManager */,
 			);
@@ -116,6 +122,22 @@
 				1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		1D0085C91D29DBC300CF4870 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				1D0085CA1D29DBD700CF4870 /* UTUser.swift */,
+				1D0085CD1D29DC6400CF4870 /* UTTeacher.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		1D0085CC1D29DC0200CF4870 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Picture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,8 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0085CB1D29DBD700CF4870 /* UTUser.swift in Sources */,
 				1D0085881D28151700CF4870 /* AppDelegate.swift in Sources */,
 				1D0085901D28151700CF4870 /* uteach.xcdatamodeld in Sources */,
+				1D0085CE1D29DC6400CF4870 /* UTTeacher.swift in Sources */,
 				1D0085A61D2844D200CF4870 /* UTSplashViewController.swift in Sources */,
 				1D0085A21D281D8200CF4870 /* UTNavigationFlowManager.swift in Sources */,
 			);
