@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UTSplashViewController: UIViewController {
+class UTSplashViewController: BaseViewController {
 
     //MARK: - Navigaiton
     
