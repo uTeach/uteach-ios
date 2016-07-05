@@ -11,14 +11,14 @@
 		1D0085901D28151700CF4870 /* uteach.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D00858E1D28151700CF4870 /* uteach.xcdatamodeld */; };
 		1D0085921D28151700CF4870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0085911D28151700CF4870 /* Assets.xcassets */; };
 		1D0085951D28151700CF4870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0085931D28151700CF4870 /* LaunchScreen.storyboard */; };
-		1D0085A21D281D8200CF4870 /* UTNavigationFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085A11D281D8200CF4870 /* UTNavigationFlowManager.swift */; };
-		1D0085A61D2844D200CF4870 /* UTSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085A41D2844D200CF4870 /* UTSplashViewController.swift */; };
-		1D0085A71D2844D200CF4870 /* UTSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */; };
-		1D0085CB1D29DBD700CF4870 /* UTUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085CA1D29DBD700CF4870 /* UTUser.swift */; };
-		1D0085CE1D29DC6400CF4870 /* UTTeacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085CD1D29DC6400CF4870 /* UTTeacher.swift */; };
+		1D0085A61D2844D200CF4870 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085A41D2844D200CF4870 /* SplashViewController.swift */; };
+		1D0085A71D2844D200CF4870 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0085A51D2844D200CF4870 /* SplashViewController.xib */; };
 		1D0085D01D2AF82B00CF4870 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085CF1D2AF82B00CF4870 /* Student.swift */; };
 		1D0085D51D2AFA8B00CF4870 /* Expertice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085D41D2AFA8B00CF4870 /* Expertice.swift */; };
 		1D0085D71D2B00C600CF4870 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085D61D2B00C600CF4870 /* Rating.swift */; };
+		1D0085DE1D2C63ED00CF4870 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085DC1D2C63ED00CF4870 /* Teacher.swift */; };
+		1D0085DF1D2C63ED00CF4870 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085DD1D2C63ED00CF4870 /* User.swift */; };
+		1D0085E11D2C63F900CF4870 /* NavigationFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085E01D2C63F900CF4870 /* NavigationFlowManager.swift */; };
 		6A2518E41D2C1935009A673B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2518E31D2C1935009A673B /* BaseViewController.swift */; };
 		6A2518E71D2C1AC4009A673B /* UIColor+ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2518E61D2C1AC4009A673B /* UIColor+ColorPalette.swift */; };
 /* End PBXBuildFile section */
@@ -30,14 +30,14 @@
 		1D0085911D28151700CF4870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D0085941D28151700CF4870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D0085961D28151700CF4870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D0085A11D281D8200CF4870 /* UTNavigationFlowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTNavigationFlowManager.swift; sourceTree = "<group>"; };
-		1D0085A41D2844D200CF4870 /* UTSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTSplashViewController.swift; sourceTree = "<group>"; };
-		1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTSplashViewController.xib; sourceTree = "<group>"; };
-		1D0085CA1D29DBD700CF4870 /* UTUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTUser.swift; sourceTree = "<group>"; };
-		1D0085CD1D29DC6400CF4870 /* UTTeacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTTeacher.swift; sourceTree = "<group>"; };
+		1D0085A41D2844D200CF4870 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		1D0085A51D2844D200CF4870 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		1D0085CF1D2AF82B00CF4870 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		1D0085D41D2AFA8B00CF4870 /* Expertice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expertice.swift; sourceTree = "<group>"; };
 		1D0085D61D2B00C600CF4870 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		1D0085DC1D2C63ED00CF4870 /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		1D0085DD1D2C63ED00CF4870 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1D0085E01D2C63F900CF4870 /* NavigationFlowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationFlowManager.swift; sourceTree = "<group>"; };
 		6A2518E31D2C1935009A673B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		6A2518E61D2C1AC4009A673B /* UIColor+ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorPalette.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +109,7 @@
 		1D00859E1D281C1B00CF4870 /* NavigationFlowManager */ = {
 			isa = PBXGroup;
 			children = (
-				1D0085A11D281D8200CF4870 /* UTNavigationFlowManager.swift */,
+				1D0085E01D2C63F900CF4870 /* NavigationFlowManager.swift */,
 			);
 			path = NavigationFlowManager;
 			sourceTree = "<group>";
@@ -133,8 +133,8 @@
 		1D0085A31D2844BD00CF4870 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				1D0085A41D2844D200CF4870 /* UTSplashViewController.swift */,
-				1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */,
+				1D0085A41D2844D200CF4870 /* SplashViewController.swift */,
+				1D0085A51D2844D200CF4870 /* SplashViewController.xib */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 		1D0085C91D29DBC300CF4870 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				1D0085CA1D29DBD700CF4870 /* UTUser.swift */,
-				1D0085CD1D29DC6400CF4870 /* UTTeacher.swift */,
+				1D0085DC1D2C63ED00CF4870 /* Teacher.swift */,
+				1D0085DD1D2C63ED00CF4870 /* User.swift */,
 				1D0085CF1D2AF82B00CF4870 /* Student.swift */,
 			);
 			path = User;
@@ -256,7 +256,7 @@
 			files = (
 				1D0085951D28151700CF4870 /* LaunchScreen.storyboard in Resources */,
 				1D0085921D28151700CF4870 /* Assets.xcassets in Resources */,
-				1D0085A71D2844D200CF4870 /* UTSplashViewController.xib in Resources */,
+				1D0085A71D2844D200CF4870 /* SplashViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,17 +267,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D0085CB1D29DBD700CF4870 /* UTUser.swift in Sources */,
 				1D0085881D28151700CF4870 /* AppDelegate.swift in Sources */,
+				1D0085E11D2C63F900CF4870 /* NavigationFlowManager.swift in Sources */,
 				1D0085901D28151700CF4870 /* uteach.xcdatamodeld in Sources */,
 				1D0085D51D2AFA8B00CF4870 /* Expertice.swift in Sources */,
-				1D0085CE1D29DC6400CF4870 /* UTTeacher.swift in Sources */,
 				6A2518E41D2C1935009A673B /* BaseViewController.swift in Sources */,
-				1D0085A61D2844D200CF4870 /* UTSplashViewController.swift in Sources */,
+				1D0085A61D2844D200CF4870 /* SplashViewController.swift in Sources */,
 				1D0085D71D2B00C600CF4870 /* Rating.swift in Sources */,
+				1D0085DE1D2C63ED00CF4870 /* Teacher.swift in Sources */,
 				6A2518E71D2C1AC4009A673B /* UIColor+ColorPalette.swift in Sources */,
+				1D0085DF1D2C63ED00CF4870 /* User.swift in Sources */,
 				1D0085D01D2AF82B00CF4870 /* Student.swift in Sources */,
-				1D0085A21D281D8200CF4870 /* UTNavigationFlowManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

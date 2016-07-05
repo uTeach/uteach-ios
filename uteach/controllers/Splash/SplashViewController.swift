@@ -8,18 +8,16 @@
 
 import UIKit
 
-class UTSplashViewController: BaseViewController {
+class SplashViewController: BaseViewController {
+    @IBOutlet weak var animatingImageView: UIImageView!
 
     //MARK: - Navigaiton
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupBackgroundColor()
+        
     }
     
     //MARK - Setup
-    func setupBackgroundColor() {
-        self.view.backgroundColor = UIColor.uteachYellowColor();
-    }
-    
+
 }

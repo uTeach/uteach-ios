@@ -8,6 +8,6 @@
 
 import UIKit
 
-class Student: UTUser {
-
+class Student: User {
+    
 }

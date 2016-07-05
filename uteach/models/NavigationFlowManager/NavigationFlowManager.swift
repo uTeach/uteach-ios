@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UTNavigationFlowManager: NSObject {
+class NavigationFlowManager: NSObject {
     
     //MARK: - Atributes
     var window: UIWindow?
@@ -19,10 +19,10 @@ class UTNavigationFlowManager: NSObject {
         self.window = window
     }
 
-    static func withDefaultWindow() -> UTNavigationFlowManager {
+    static func withDefaultWindow() -> NavigationFlowManager {
         let window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let navigationFlowManagerWithDefaultWindow = UTNavigationFlowManager(withWindow: window)
+        let navigationFlowManagerWithDefaultWindow = NavigationFlowManager(withWindow: window)
         
         return navigationFlowManagerWithDefaultWindow
     }
@@ -33,11 +33,11 @@ class UTNavigationFlowManager: NSObject {
     
     //MARK: - Presentations
     func presentSplashAnimated(animated: Bool) {
-        presentViewController(UTSplashViewController(), animated: animated)
+        presentViewController(SplashViewController(), animated: animated)
     }
     
     func presentLoginViewController(animated: Bool) {
-        presentViewController(LoginViewController(), animated: animated);
+//        presentViewController(LoginViewController(), animated: animated);
     }
     
     //MARK: - Utils

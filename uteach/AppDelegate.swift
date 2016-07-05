@@ -12,7 +12,7 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var navigationFlowManager: UTNavigationFlowManager?
+    var navigationFlowManager: NavigationFlowManager?
 
     // MARK: - UIApplicationDelegate
     
@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: - Setup
     
     func setupNavigationFlowManager() {
-        navigationFlowManager = UTNavigationFlowManager.withDefaultWindow()
+        navigationFlowManager = NavigationFlowManager.withDefaultWindow()
         navigationFlowManager!.showWindow()
         
         navigationFlowManager?.presentSplashAnimated(true)

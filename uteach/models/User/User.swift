@@ -8,6 +8,6 @@
 
 import UIKit
 
-class UTUser: NSObject {
+class User: NSObject {
     
 }

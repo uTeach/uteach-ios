@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Teacher: UTUser {
+class Teacher: User {
     
     
     
