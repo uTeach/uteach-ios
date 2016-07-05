@@ -19,6 +19,8 @@
 		1D0085DE1D2C63ED00CF4870 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085DC1D2C63ED00CF4870 /* Teacher.swift */; };
 		1D0085DF1D2C63ED00CF4870 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085DD1D2C63ED00CF4870 /* User.swift */; };
 		1D0085E11D2C63F900CF4870 /* NavigationFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085E01D2C63F900CF4870 /* NavigationFlowManager.swift */; };
+		1D0085E51D2C68C700CF4870 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085E31D2C68C700CF4870 /* LoginViewController.swift */; };
+		1D0085E61D2C68C700CF4870 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0085E41D2C68C700CF4870 /* LoginViewController.xib */; };
 		6A2518E41D2C1935009A673B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2518E31D2C1935009A673B /* BaseViewController.swift */; };
 		6A2518E71D2C1AC4009A673B /* UIColor+ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2518E61D2C1AC4009A673B /* UIColor+ColorPalette.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		1D0085DC1D2C63ED00CF4870 /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		1D0085DD1D2C63ED00CF4870 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1D0085E01D2C63F900CF4870 /* NavigationFlowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationFlowManager.swift; sourceTree = "<group>"; };
+		1D0085E31D2C68C700CF4870 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1D0085E41D2C68C700CF4870 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		6A2518E31D2C1935009A673B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		6A2518E61D2C1AC4009A673B /* UIColor+ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorPalette.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +90,7 @@
 		1D00859C1D281C1B00CF4870 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D0085E21D2C68C700CF4870 /* Login */,
 				6A2518E21D2C1935009A673B /* Base */,
 				1D0085A31D2844BD00CF4870 /* Splash */,
 			);
@@ -179,6 +184,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		1D0085E21D2C68C700CF4870 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1D0085E31D2C68C700CF4870 /* LoginViewController.swift */,
+				1D0085E41D2C68C700CF4870 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		6A2518E21D2C1935009A673B /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0085E61D2C68C700CF4870 /* LoginViewController.xib in Resources */,
 				1D0085951D28151700CF4870 /* LaunchScreen.storyboard in Resources */,
 				1D0085921D28151700CF4870 /* Assets.xcassets in Resources */,
 				1D0085A71D2844D200CF4870 /* SplashViewController.xib in Resources */,
@@ -267,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0085E51D2C68C700CF4870 /* LoginViewController.swift in Sources */,
 				1D0085881D28151700CF4870 /* AppDelegate.swift in Sources */,
 				1D0085E11D2C63F900CF4870 /* NavigationFlowManager.swift in Sources */,
 				1D0085901D28151700CF4870 /* uteach.xcdatamodeld in Sources */,

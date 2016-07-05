@@ -13,20 +13,15 @@ class NavigationFlowManager: NSObject {
     //MARK: - Atributes
     var window: UIWindow?
     
-    //MARK: - Init
-    init(withWindow window: UIWindow) {
-        super.init()
+    static let shareInstance = NavigationFlowManager()
+    
+    //MARK: - Setup
+    func setup() {
+        let window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
         self.window = window
     }
 
-    static func withDefaultWindow() -> NavigationFlowManager {
-        let window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        
-        let navigationFlowManagerWithDefaultWindow = NavigationFlowManager(withWindow: window)
-        
-        return navigationFlowManagerWithDefaultWindow
-    }
-    
     func showWindow() {
         window?.makeKeyAndVisible()
     }
@@ -37,7 +32,7 @@ class NavigationFlowManager: NSObject {
     }
     
     func presentLoginViewController(animated: Bool) {
-//        presentViewController(LoginViewController(), animated: animated);
+        presentViewController(LoginViewController(), animated: animated);
     }
     
     //MARK: - Utils

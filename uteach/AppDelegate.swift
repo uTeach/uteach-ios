@@ -49,8 +49,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: - Setup
     
     func setupNavigationFlowManager() {
-        navigationFlowManager = NavigationFlowManager.withDefaultWindow()
-        navigationFlowManager!.showWindow()
+        navigationFlowManager = NavigationFlowManager.shareInstance
+        
+        navigationFlowManager!.setup()
+        navigationFlowManager?.showWindow()
         
         navigationFlowManager?.presentSplashAnimated(true)
     }

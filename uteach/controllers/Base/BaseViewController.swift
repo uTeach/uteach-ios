@@ -10,9 +10,16 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    //MARK - Navigation
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.setupBackgroundColor()
     }
+    
+    //MARK - Setup
+    func setupBackgroundColor() {
+        self.view.backgroundColor = UIColor.uteachYellowColor()
+    }
+    
 }
