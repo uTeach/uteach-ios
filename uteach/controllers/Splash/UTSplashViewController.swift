@@ -11,11 +11,15 @@ import UIKit
 class UTSplashViewController: UIViewController {
 
     //MARK: - Navigaiton
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.setupBackgroundColor()
     }
     
     //MARK - Setup
+    func setupBackgroundColor() {
+        self.view.backgroundColor = UIColor.uteachYellowColor();
+    }
     
 }

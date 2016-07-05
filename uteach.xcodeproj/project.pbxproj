@@ -14,6 +14,8 @@
 		1D0085A21D281D8200CF4870 /* UTNavigationFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085A11D281D8200CF4870 /* UTNavigationFlowManager.swift */; };
 		1D0085A61D2844D200CF4870 /* UTSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085A41D2844D200CF4870 /* UTSplashViewController.swift */; };
 		1D0085A71D2844D200CF4870 /* UTSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */; };
+		6A2518DC1D2C1545009A673B /* UIColor+ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2518DB1D2C1545009A673B /* UIColor+ColorPalette.swift */; };
+		6A2518E11D2C1754009A673B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2518E01D2C1754009A673B /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1D0085A11D281D8200CF4870 /* UTNavigationFlowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTNavigationFlowManager.swift; sourceTree = "<group>"; };
 		1D0085A41D2844D200CF4870 /* UTSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTSplashViewController.swift; sourceTree = "<group>"; };
 		1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTSplashViewController.xib; sourceTree = "<group>"; };
+		6A2518DB1D2C1545009A673B /* UIColor+ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorPalette.swift"; sourceTree = "<group>"; };
+		6A2518E01D2C1754009A673B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		1D00859C1D281C1B00CF4870 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6A2518DF1D2C1754009A673B /* Base */,
 				1D0085A31D2844BD00CF4870 /* Splash */,
 			);
 			path = controllers;
@@ -80,6 +85,7 @@
 		1D00859D1D281C1B00CF4870 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				6A2518DA1D2C1520009A673B /* ColorPalette */,
 				1D0085A01D281C5000CF4870 /* AppDelegate */,
 				1D00859E1D281C1B00CF4870 /* NavigationFlowManager */,
 			);
@@ -116,6 +122,22 @@
 				1D0085A51D2844D200CF4870 /* UTSplashViewController.xib */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		6A2518DA1D2C1520009A673B /* ColorPalette */ = {
+			isa = PBXGroup;
+			children = (
+				6A2518DB1D2C1545009A673B /* UIColor+ColorPalette.swift */,
+			);
+			path = ColorPalette;
+			sourceTree = "<group>";
+		};
+		6A2518DF1D2C1754009A673B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6A2518E01D2C1754009A673B /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +215,9 @@
 				1D0085881D28151700CF4870 /* AppDelegate.swift in Sources */,
 				1D0085901D28151700CF4870 /* uteach.xcdatamodeld in Sources */,
 				1D0085A61D2844D200CF4870 /* UTSplashViewController.swift in Sources */,
+				6A2518DC1D2C1545009A673B /* UIColor+ColorPalette.swift in Sources */,
 				1D0085A21D281D8200CF4870 /* UTNavigationFlowManager.swift in Sources */,
+				6A2518E11D2C1754009A673B /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
