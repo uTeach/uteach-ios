@@ -10,6 +10,17 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>09C5E90726D2521A760312DBF50D9358</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>0F8D2E47FE03D3B91B51069F7C273AF4</key>
 		<dict>
 			<key>children</key>
@@ -182,7 +193,7 @@
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>0F8D2E47FE03D3B91B51069F7C273AF4</string>
-				<string>CCA510CFBEA2D207524CDA0D73C3B561</string>
+				<string>09C5E90726D2521A760312DBF50D9358</string>
 				<string>F6CCA5D896907CE7506C37FD31FC265A</string>
 			</array>
 			<key>isa</key>
@@ -206,17 +217,6 @@
 			<string>SOURCE_ROOT</string>
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>CCA510CFBEA2D207524CDA0D73C3B561</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
@@ -244,7 +244,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>CCA510CFBEA2D207524CDA0D73C3B561</string>
+			<string>09C5E90726D2521A760312DBF50D9358</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>

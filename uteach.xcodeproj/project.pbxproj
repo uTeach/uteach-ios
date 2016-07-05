@@ -19,7 +19,8 @@
 		1D0085D01D2AF82B00CF4870 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085CF1D2AF82B00CF4870 /* Student.swift */; };
 		1D0085D51D2AFA8B00CF4870 /* Expertice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085D41D2AFA8B00CF4870 /* Expertice.swift */; };
 		1D0085D71D2B00C600CF4870 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085D61D2B00C600CF4870 /* Rating.swift */; };
-		1D0085DB1D2B033300CF4870 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0085DA1D2B033300CF4870 /* BaseViewController.swift */; };
+		6A2518E41D2C1935009A673B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2518E31D2C1935009A673B /* BaseViewController.swift */; };
+		6A2518E71D2C1AC4009A673B /* UIColor+ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2518E61D2C1AC4009A673B /* UIColor+ColorPalette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +38,8 @@
 		1D0085CF1D2AF82B00CF4870 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		1D0085D41D2AFA8B00CF4870 /* Expertice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expertice.swift; sourceTree = "<group>"; };
 		1D0085D61D2B00C600CF4870 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
-		1D0085DA1D2B033300CF4870 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6A2518E31D2C1935009A673B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6A2518E61D2C1AC4009A673B /* UIColor+ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorPalette.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +86,7 @@
 		1D00859C1D281C1B00CF4870 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1D0085D81D2B025700CF4870 /* Base */,
+				6A2518E21D2C1935009A673B /* Base */,
 				1D0085A31D2844BD00CF4870 /* Splash */,
 			);
 			path = controllers;
@@ -93,6 +95,7 @@
 		1D00859D1D281C1B00CF4870 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				6A2518E51D2C1AC4009A673B /* ColorPalette */,
 				1D0085D31D2AFA7F00CF4870 /* Expertise */,
 				1D0085D21D2AF91700CF4870 /* Rating */,
 				1D0085CC1D29DC0200CF4870 /* Picture */,
@@ -169,19 +172,27 @@
 			path = Expertise;
 			sourceTree = "<group>";
 		};
-		1D0085D81D2B025700CF4870 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				1D0085DA1D2B033300CF4870 /* BaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
 		1D0085D91D2B026600CF4870 /* Base */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		6A2518E21D2C1935009A673B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6A2518E31D2C1935009A673B /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6A2518E51D2C1AC4009A673B /* ColorPalette */ = {
+			isa = PBXGroup;
+			children = (
+				6A2518E61D2C1AC4009A673B /* UIColor+ColorPalette.swift */,
+			);
+			path = ColorPalette;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +272,10 @@
 				1D0085901D28151700CF4870 /* uteach.xcdatamodeld in Sources */,
 				1D0085D51D2AFA8B00CF4870 /* Expertice.swift in Sources */,
 				1D0085CE1D29DC6400CF4870 /* UTTeacher.swift in Sources */,
-				1D0085DB1D2B033300CF4870 /* BaseViewController.swift in Sources */,
+				6A2518E41D2C1935009A673B /* BaseViewController.swift in Sources */,
 				1D0085A61D2844D200CF4870 /* UTSplashViewController.swift in Sources */,
 				1D0085D71D2B00C600CF4870 /* Rating.swift in Sources */,
+				6A2518E71D2C1AC4009A673B /* UIColor+ColorPalette.swift in Sources */,
 				1D0085D01D2AF82B00CF4870 /* Student.swift in Sources */,
 				1D0085A21D281D8200CF4870 /* UTNavigationFlowManager.swift in Sources */,
 			);
