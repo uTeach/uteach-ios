@@ -11,11 +11,9 @@ import UIKit
 class UTNavigationFlowManager: NSObject {
     
     //MARK: - Atributes
-    
     var window: UIWindow?
     
     //MARK: - Init
-    
     init(withWindow window: UIWindow) {
         super.init()
         self.window = window
@@ -34,13 +32,15 @@ class UTNavigationFlowManager: NSObject {
     }
     
     //MARK: - Presentations
-    
     func presentSplashAnimated(animated: Bool) {
-        presentViewController(UTSplashViewController(), animated: true)
+        presentViewController(UTSplashViewController(), animated: animated)
+    }
+    
+    func presentLoginViewController(animated: Bool) {
+        presentViewController(LoginViewController(), animated: animated);
     }
     
     //MARK: - Utils
-    
     func presentViewController(viewController: UIViewController, animated:Bool) {
         self.presentViewController(viewController, animated: animated, completion: nil)
     }
