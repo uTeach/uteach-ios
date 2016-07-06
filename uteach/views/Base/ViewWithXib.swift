@@ -39,9 +39,4 @@ class ViewWithXib: UIView {
         
         isInitialized = true;
     }
-    
-    
-    
-    
-    
 }

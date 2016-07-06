@@ -9,11 +9,15 @@
 import UIKit
 
 extension UIColor {
-    class func uteachBackgroundColor() -> UIColor {
+    class func uteachBackground() -> UIColor {
         return UIColor.init(red: 255, green: 255, blue: 170, alpha: 1)
     }
     
-    class func utechYellowColor() -> UIColor {
+    class func utechYellow() -> UIColor {
         return UIColor.init(red: 255, green: 196, blue: 0, alpha: 1)
+    }
+    
+    class func uteachViolet() -> UIColor {
+        return UIColor.init(red: 255, green: 255, blue: 0, alpha: 1)
     }
 }

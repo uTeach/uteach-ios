@@ -24,13 +24,18 @@ class SplashViewController: BaseViewController {
         tryLogin()
     }
     
-    //MARK - Setup
+    //MARK: - Setup
     func setupAnimatingImageView() {
-        Timer.scheduledTimer(timeInterval: TimeInterval(3), target: self, selector: #selector(loginDidFail), userInfo: nil, repeats: false)
+        let animatingImage = UIImage.animatedImageNamed("splash_animation", duration: 10);
+        
+        animatingImageView.image = animatingImage
+        animatingImageView.startAnimating()
     }
     
-    //MARK - Login
+    //MARK: - Login
     func tryLogin() {
+        //TODO: - Simulation of request, must make the actual request
+        Timer.scheduledTimer(timeInterval: TimeInterval(5), target: self, selector: #selector(loginDidFail), userInfo: nil, repeats: false)
     }
     
     func loginDidFail(_ timer: Timer) {
