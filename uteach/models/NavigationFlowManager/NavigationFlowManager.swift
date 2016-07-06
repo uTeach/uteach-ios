@@ -32,7 +32,7 @@ class NavigationFlowManager: NSObject {
     }
     
     func presentLoginViewController(_ animated: Bool) {
-        presentViewController(LoginViewController(), animated: animated);
+        presentViewController(UserCredentialsViewController(), animated: animated);
     }
     
     //MARK: - Utils

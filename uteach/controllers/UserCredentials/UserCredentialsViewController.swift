@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  UserCredentialsViewController.swift
 //  uteach
 //
 //  Created by Santiago Lazzari on 7/5/16.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class LoginViewController: BaseViewController {
+class UserCredentialsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
-
 }
