@@ -9,13 +9,13 @@
 import UIKit
 
 enum RatingType {
-    case APlus
-    case A
-    case BPlus
-    case B
-    case CPlus
-    case C
-    case F
+    case aPlus
+    case a
+    case bPlus
+    case b
+    case cPlus
+    case c
+    case f
 }
 
 class Rating: NSObject {

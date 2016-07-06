@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="uteach" customModuleProvider="target">
@@ -14,7 +15,57 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzH-ux-msH" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifg-3i-PYf">
+                            <rect key="frame" x="150" y="200" width="300" height="72"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GrV-xY-Ts8">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgd-8F-UUO">
+                                    <rect key="frame" x="0.0" y="42" width="300" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="GrV-xY-Ts8" secondAttribute="trailing" id="LHr-6I-yPg"/>
+                                <constraint firstAttribute="bottom" secondItem="wgd-8F-UUO" secondAttribute="bottom" id="TlY-2S-aQd"/>
+                                <constraint firstAttribute="trailing" secondItem="wgd-8F-UUO" secondAttribute="trailing" id="hu2-zy-fLb"/>
+                                <constraint firstItem="wgd-8F-UUO" firstAttribute="leading" secondItem="Ifg-3i-PYf" secondAttribute="leading" id="kLR-fS-3sr"/>
+                                <constraint firstItem="wgd-8F-UUO" firstAttribute="top" secondItem="GrV-xY-Ts8" secondAttribute="bottom" constant="12" id="mep-EM-VLF"/>
+                                <constraint firstItem="GrV-xY-Ts8" firstAttribute="leading" secondItem="Ifg-3i-PYf" secondAttribute="leading" id="smy-t2-FMU"/>
+                                <constraint firstItem="GrV-xY-Ts8" firstAttribute="top" secondItem="Ifg-3i-PYf" secondAttribute="top" id="t11-RF-pBj"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Ifg-3i-PYf" firstAttribute="centerX" secondItem="RzH-ux-msH" secondAttribute="centerX" id="XZF-5J-XQ9"/>
+                        <constraint firstItem="Ifg-3i-PYf" firstAttribute="width" secondItem="RzH-ux-msH" secondAttribute="width" multiplier="1/2" id="ZzZ-Xq-whz"/>
+                        <constraint firstItem="Ifg-3i-PYf" firstAttribute="height" secondItem="RzH-ux-msH" secondAttribute="height" id="aZw-2e-now"/>
+                        <constraint firstItem="Ifg-3i-PYf" firstAttribute="top" secondItem="RzH-ux-msH" secondAttribute="top" constant="200" id="hWc-7J-pAq"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="aZw-2e-now"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RzH-ux-msH" secondAttribute="bottom" id="80s-O3-g4c"/>
+                <constraint firstItem="RzH-ux-msH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CdO-2w-B21"/>
+                <constraint firstItem="RzH-ux-msH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="owO-rS-45Y"/>
+                <constraint firstAttribute="trailing" secondItem="RzH-ux-msH" secondAttribute="trailing" id="th0-aE-hAY"/>
+            </constraints>
+            <point key="canvasLocation" x="327" y="433"/>
         </view>
     </objects>
 </document>

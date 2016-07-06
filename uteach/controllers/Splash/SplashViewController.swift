@@ -18,7 +18,7 @@ class SplashViewController: BaseViewController {
         setupAnimatingImageView()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         tryLogin()
@@ -26,14 +26,14 @@ class SplashViewController: BaseViewController {
     
     //MARK - Setup
     func setupAnimatingImageView() {
-        NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(3), target: self, selector: #selector(loginDidFail), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: TimeInterval(3), target: self, selector: #selector(loginDidFail), userInfo: nil, repeats: false)
     }
     
     //MARK - Login
     func tryLogin() {
     }
     
-    func loginDidFail(timer: NSTimer) {
+    func loginDidFail(_ timer: Timer) {
         //Go to login view
         NavigationFlowManager.shareInstance.presentLoginViewController(true)
     }

@@ -9,10 +9,10 @@
 import UIKit
 
 enum ExpertiseType {
-    case Beginer
-    case Averge
-    case Advance
-    case Expert
+    case beginer
+    case averge
+    case advance
+    case expert
 }
 
 class Expertice: NSObject {

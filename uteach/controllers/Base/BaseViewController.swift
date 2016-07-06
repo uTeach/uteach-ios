@@ -19,7 +19,7 @@ class BaseViewController: UIViewController {
     
     //MARK - Setup
     func setupBackgroundColor() {
-        self.view.backgroundColor = UIColor.uteachYellowColor()
+        self.view.backgroundColor = UIColor.uteachBackgroundColor()
     }
     
 }
