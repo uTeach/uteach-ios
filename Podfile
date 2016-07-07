@@ -3,6 +3,6 @@
 
 target 'uteach' do
 
-pod 'Gifu'
+  pod 'FLAnimatedImage', '~> 1.0'
 
 end

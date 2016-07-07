@@ -26,9 +26,10 @@ class SplashViewController: BaseViewController {
     
     //MARK: - Setup
     func setupAnimatingImageView() {
-        let animatingImage = UIImage.animatedImageNamed("splash_animation", duration: 10);
+        let animatingImage = UIImage.gifWithName(name: "splash_animation")
         
         animatingImageView.image = animatingImage
+        animatingImageView.animationDuration = 2
         animatingImageView.startAnimating()
     }
     
