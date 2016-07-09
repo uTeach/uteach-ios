@@ -13,7 +13,7 @@ extension UIColor {
         return UIColor.init(red: 255, green: 255, blue: 170, alpha: 1)
     }
     
-    class func utechYellow() -> UIColor {
+    class func uteachYellow() -> UIColor {
         return UIColor.init(red: 255, green: 196, blue: 0, alpha: 1)
     }
     

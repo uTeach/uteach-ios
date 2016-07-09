@@ -27,20 +27,16 @@ class NavigationFlowManager: NSObject {
     }
     
     //MARK: - Presentations
-    func presentSplashAnimated(_ animated: Bool) {
-        presentViewController(SplashViewController(), animated: animated)
-    }
-    
-    func presentLoginViewController(_ animated: Bool) {
+    func presentUserCredentialsAnimated(_ animated: Bool) {
         presentViewController(UserCredentialsViewController(), animated: animated);
     }
     
     //MARK: - Utils
-    func presentViewController(_ viewController: UIViewController, animated:Bool) {
+    private func presentViewController(_ viewController: UIViewController, animated:Bool) {
         self.presentViewController(viewController, animated: animated, completion: nil)
     }
     
-    func presentViewController(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
+    private func presentViewController(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
         if self.topMostViewController() == nil {
             self.window?.rootViewController = viewController
         } else {
@@ -48,7 +44,7 @@ class NavigationFlowManager: NSObject {
         }
     }
     
-    func topMostViewController() -> UIViewController? {
+    private func topMostViewController() -> UIViewController? {
         var topViewController = window?.rootViewController
         
         while ((topViewController?.presentedViewController) != nil) {

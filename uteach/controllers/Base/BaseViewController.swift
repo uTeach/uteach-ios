@@ -8,16 +8,17 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
 
-    //MARK - Navigation
+class BaseViewController: UIViewController {
+    
+    //MARK: - Navigation
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.setupBackgroundColor()
     }
     
-    //MARK - Setup
+    //MARK: - Setup
     func setupBackgroundColor() {
         self.view.backgroundColor = UIColor.uteachBackground()
     }

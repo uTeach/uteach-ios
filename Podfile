@@ -3,6 +3,4 @@
 
 target 'uteach' do
 
-  pod 'FLAnimatedImage', '~> 1.0'
-
 end

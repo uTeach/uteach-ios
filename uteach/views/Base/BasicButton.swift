@@ -11,10 +11,8 @@ import UIKit
 class BasicButton: UIButton {
     
     //MARK - Constans
-    let kBasicButtonBorderWidth: CGFloat = 2
+    let kBasicButtonBorderWidth: CGFloat = 1
     let kBasicButtonAnimationDuration: CGFloat = 0.3
-    
-    var style:UIColor?
     
     //MARK - Init
     override init(frame: CGRect) {
@@ -44,24 +42,32 @@ class BasicButton: UIButton {
         layer.masksToBounds = true
         layer.cornerRadius = self.frame.size.height / 2.0
         layer.borderWidth = kBasicButtonBorderWidth
+        layer.borderColor = backgroundColor?.cgColor
     }
     
     //MARK - Style
-    func fillAnimated(animated: Bool) {
-        
+    func fill(animated: Bool) {
+        UIView.animate(withDuration: TimeInterval(kBasicButtonAnimationDuration)) {
+            self.fill()
+        }
+    }
+    
+    func style(color: UIColor) {
+        backgroundColor = color
     }
     
     func fill() {
-        backgroundColor = style
-        layer.borderColor = UIColor.clear().cgColor
+        backgroundColor = backgroundColor?.withAlphaComponent(1)
     }
     
-    func clearAnimated(animated: Bool) {
-        backgroundColor = UIColor.clear()
-        layer.borderColor = style?.cgColor
+    func clear(animated: Bool) {
+        UIView.animate(withDuration: TimeInterval(kBasicButtonAnimationDuration)) {
+            self.clear()
+        }
     }
     
     func clear() {
-        
+        backgroundColor = backgroundColor?.withAlphaComponent(0)
+
     }
 }
