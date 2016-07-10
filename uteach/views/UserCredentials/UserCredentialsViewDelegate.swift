@@ -10,5 +10,5 @@ import Foundation
 
 protocol UserCredentialsViewDelegate {
     func userCredentialsViewDidTapSignUp(userCredentialsView: UserCredentialsView)
-    func userCredentialsViewDidtapLogin(userCredentialsView: userCredentialsView)
+    func userCredentialsViewDidtapLogin(userCredentialsView: UserCredentialsView)
 }

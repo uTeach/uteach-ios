@@ -284,9 +284,9 @@
 		1D1646B61D2CA64A00C6A30B /* UserCredentials */ = {
 			isa = PBXGroup;
 			children = (
+				1DF321751D31BE15008F3852 /* UserCredentialsViewDelegate.swift */,
 				1D1646B91D2CAC8100C6A30B /* UserCredentialsView.swift */,
 				1D0F2BA71D2CB50300F2EF8D /* UserCredentialsView.xib */,
-				1DF321751D31BE15008F3852 /* UserCredentialsViewDelegate.swift */,
 			);
 			path = UserCredentials;
 			sourceTree = "<group>";

@@ -14,9 +14,9 @@ class UserCredentialsView: ViewWithXib {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var loginButton: BasicButton!
     @IBOutlet weak var signUpButton: BasicButton!
-    var delegate: AnyObject<UserCredentialsViewDelegate>?
+    var delegate: UserCredentialsViewDelegate?
     
-    let signInView: signInView = SignInView()
+    let signUpView: SignUpView = SignUpView()
     let loginView: LoginView = LoginView()
     
     //MARK - Init
@@ -32,7 +32,7 @@ class UserCredentialsView: ViewWithXib {
         setupSignUpButton()
         setupContainerView()
         setupLoginView()
-        setupSignInView()
+        setupSignUpView()
     }
     
     func setupLoginButton() {
@@ -48,11 +48,13 @@ class UserCredentialsView: ViewWithXib {
     }
     
     private func setupLoginView() {
-        
+        loginView.alpha = 0
+        loginView.isHidden = true
     }
     
     private func setupSignUpView() {
-    
+        signUpView.alpha = 0
+        signUpView.isHidden = true
     }
     
     //MARK - Style
@@ -65,25 +67,38 @@ class UserCredentialsView: ViewWithXib {
         }
     }
     
-    func showSingInAnimated(animated: Bool) {
-        
-    }
-    
     func showLoginAnimated(animated: Bool) {
-        
-    }
-    
-    //MARK - Action
-    @IBAction func loginButtonWasTapped(_ sender: AnyObject) {
-        delegate.userCredentialsViewDidTapLogin()
+
         loginButton.fill(animated: true)
         signUpButton.clear(animated: true)
+
+        loginView.isHidden = false
+        addSubview(loginView)
+        loginView.frame = (loginButton.superview?.convert(loginButton.frame, to: view))!
+        loginView.alpha = 0
+        
+        UIView.animate(withDuration: TimeInterval(0.5), delay: TimeInterval(0), usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: UIViewAnimationOptions(rawValue: UInt(0)), animations: {
+            self.loginView.alpha = 1
+            self.loginView.frame = CGRect(origin: CGPoint(x: 20, y: 20), size: CGSize(width: self.frame.size.width - 40, height: 200))
+            
+            
+            }) { (finish) in
+            
+        }
     }
     
-    @IBAction func signUpButtonWasTapped(_ sender: AnyObject) {
-        delegate.userCredentialsViewDidTapSignUp()
+    func showSingUpAnimated(animated: Bool) {
         signUpButton.fill(animated: true)
         loginButton.clear(animated: true)
     }
     
+    
+    //MARK - Action
+    @IBAction func loginButtonWasTapped(_ sender: AnyObject) {
+        delegate?.userCredentialsViewDidtapLogin(userCredentialsView: self)
+    }
+    
+    @IBAction func signUpButtonWasTapped(_ sender: AnyObject) {
+        delegate?.userCredentialsViewDidTapSignUp(userCredentialsView: self)
+    }
 }

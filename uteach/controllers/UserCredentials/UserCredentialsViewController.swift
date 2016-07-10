@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserCredentialsViewController: BaseViewController, UIViewControllerTransitioningDelegate {
+class UserCredentialsViewController: BaseViewController, UserCredentialsViewDelegate {
     
     var baseView: UserCredentialsView {
         return view as! UserCredentialsView
@@ -18,21 +18,16 @@ class UserCredentialsViewController: BaseViewController, UIViewControllerTransit
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupTransitioningDelegate()
+        setupUserCredentialsView()
+        
         tryLogin()
     }
     
-    //MARK: Setup
-    func setupTransitioningDelegate() {
-        transitioningDelegate = self
+    //MARK: - Setup
+    func setupUserCredentialsView() {
+        baseView.delegate = self
     }
-    
-    //MARK: UIViewControllerTransitioningDelegate
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
-        return SplashToUserCredentialsTransition()
-    }
-    
+
     //MARK: - Login
     private func tryLogin() {
         //TODO: - Simulation of request, must make the actual request
@@ -41,6 +36,15 @@ class UserCredentialsViewController: BaseViewController, UIViewControllerTransit
     
     @objc private func loginDidFail(_ timer: Timer) {
         baseView.showContainerAnimated(animated: true)
+    }
+    
+    //MARK: - UserCredentialsViewDelegate
+    func userCredentialsViewDidtapLogin(userCredentialsView: UserCredentialsView) {
+        baseView.showLoginAnimated(animated: true)
+    }
+    
+    func userCredentialsViewDidTapSignUp(userCredentialsView: UserCredentialsView) {
+        baseView.showSingUpAnimated(animated: true)
     }
     
 }
