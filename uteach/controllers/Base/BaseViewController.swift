@@ -23,4 +23,9 @@ class BaseViewController: UIViewController {
         self.view.backgroundColor = UIColor.uteachBackground()
     }
     
+    //MARK: - StatusBar
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
 }

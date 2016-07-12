@@ -21,7 +21,6 @@
 		1D0BDCFC1D3020A700F457A6 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0BDCFB1D3020A700F457A6 /* SplashView.swift */; };
 		1D0BDCFE1D3020B600F457A6 /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0BDCFD1D3020B600F457A6 /* SplashView.xib */; };
 		1D0F2BA81D2CB50300F2EF8D /* UserCredentialsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0F2BA71D2CB50300F2EF8D /* UserCredentialsView.xib */; };
-		1D0F2BAD1D2DA81B00F2EF8D /* UIImage+Giff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F2BAC1D2DA81B00F2EF8D /* UIImage+Giff.swift */; };
 		1D0F2BB31D2DF9EB00F2EF8D /* splash_animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D0F2BB21D2DF9EB00F2EF8D /* splash_animation.gif */; };
 		1D0F2BB61D2DFFEB00F2EF8D /* SplashToUserCredentialsTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F2BB51D2DFFEB00F2EF8D /* SplashToUserCredentialsTransition.swift */; };
 		1D1646B41D2CA60A00C6A30B /* UserCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1646B21D2CA60A00C6A30B /* UserCredentialsViewController.swift */; };
@@ -29,6 +28,7 @@
 		1D1646B81D2CA6FF00C6A30B /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1646B71D2CA6FF00C6A30B /* BasicButton.swift */; };
 		1D1646BA1D2CAC8100C6A30B /* UserCredentialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1646B91D2CAC8100C6A30B /* UserCredentialsView.swift */; };
 		1D1646BC1D2CACA700C6A30B /* ViewWithXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1646BB1D2CACA700C6A30B /* ViewWithXib.swift */; };
+		1D1B1E1A1D32AB17006A5320 /* UIImage+Giff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1B1E191D32AB17006A5320 /* UIImage+Giff.swift */; };
 		1DF3216F1D31BB59008F3852 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3216C1D31BB59008F3852 /* LoginView.swift */; };
 		1DF321701D31BB59008F3852 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3216E1D31BB59008F3852 /* SignUpView.swift */; };
 		1DF321721D31BC28008F3852 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF321711D31BC28008F3852 /* LoginView.xib */; };
@@ -54,7 +54,6 @@
 		1D0BDCFB1D3020A700F457A6 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		1D0BDCFD1D3020B600F457A6 /* SplashView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
 		1D0F2BA71D2CB50300F2EF8D /* UserCredentialsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCredentialsView.xib; sourceTree = "<group>"; };
-		1D0F2BAC1D2DA81B00F2EF8D /* UIImage+Giff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Giff.swift"; sourceTree = "<group>"; };
 		1D0F2BB21D2DF9EB00F2EF8D /* splash_animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = splash_animation.gif; sourceTree = "<group>"; };
 		1D0F2BB51D2DFFEB00F2EF8D /* SplashToUserCredentialsTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashToUserCredentialsTransition.swift; sourceTree = "<group>"; };
 		1D1646B21D2CA60A00C6A30B /* UserCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCredentialsViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		1D1646B71D2CA6FF00C6A30B /* BasicButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
 		1D1646B91D2CAC8100C6A30B /* UserCredentialsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCredentialsView.swift; sourceTree = "<group>"; };
 		1D1646BB1D2CACA700C6A30B /* ViewWithXib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWithXib.swift; sourceTree = "<group>"; };
+		1D1B1E191D32AB17006A5320 /* UIImage+Giff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Giff.swift"; sourceTree = "<group>"; };
 		1DF3216C1D31BB59008F3852 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1DF3216E1D31BB59008F3852 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		1DF321711D31BC28008F3852 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 		1D0F2BAB1D2DA81B00F2EF8D /* Giff */ = {
 			isa = PBXGroup;
 			children = (
-				1D0F2BAC1D2DA81B00F2EF8D /* UIImage+Giff.swift */,
+				1D1B1E191D32AB17006A5320 /* UIImage+Giff.swift */,
 			);
 			path = Giff;
 			sourceTree = "<group>";
@@ -463,12 +463,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D0085881D28151700CF4870 /* AppDelegate.swift in Sources */,
+				1D1B1E1A1D32AB17006A5320 /* UIImage+Giff.swift in Sources */,
 				1D0085E11D2C63F900CF4870 /* NavigationFlowManager.swift in Sources */,
 				1D1646BC1D2CACA700C6A30B /* ViewWithXib.swift in Sources */,
 				1D0085901D28151700CF4870 /* uteach.xcdatamodeld in Sources */,
 				1D0085D51D2AFA8B00CF4870 /* Expertice.swift in Sources */,
 				1DF321701D31BB59008F3852 /* SignUpView.swift in Sources */,
-				1D0F2BAD1D2DA81B00F2EF8D /* UIImage+Giff.swift in Sources */,
 				6A2518E41D2C1935009A673B /* BaseViewController.swift in Sources */,
 				1D1646B81D2CA6FF00C6A30B /* BasicButton.swift in Sources */,
 				1D1646B41D2CA60A00C6A30B /* UserCredentialsViewController.swift in Sources */,

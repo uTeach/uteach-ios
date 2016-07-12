@@ -56,7 +56,7 @@ extension UIImage {
     }
     
     class func delayForImageAtIndex(index: Int, source: CGImageSource!) -> Double {
-        var delay = 0.1
+        var delay: Double
         
         // Get dictionaries
         let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil)
@@ -76,10 +76,6 @@ extension UIImage {
         }
         
         delay = delayObject as! Double
-        
-        if delay < 0.1 {
-            delay = 0.1 // Make sure they're not too fast
-        }
         
         return delay
     }
@@ -146,7 +142,7 @@ extension UIImage {
             }
             
             // At it's delay in cs
-            let delaySeconds = UIImage.delayForImageAtIndex(index: Int(i),
+            let delaySeconds = UIImage.delayForImageAtIndex(index: i,
                                                             source: source)
             delays.append(Int(delaySeconds * 1000.0)) // Seconds to ms
         }
