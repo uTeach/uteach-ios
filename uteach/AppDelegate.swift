@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationFlowManager!.setup()
         navigationFlowManager?.showWindow()
         
-        navigationFlowManager?.presentUserCredentialsAnimated(true)
+        navigationFlowManager?.presentSplashControllerAnimated(true)
     }
 
     // MARK: - Core Data stack

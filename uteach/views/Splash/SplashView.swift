@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SplashView: ViewWithXib {
+class SplashView: ControllerView {
 
     @IBOutlet weak var animatingImageView: UIImageView!
     //MARK: - Init
@@ -16,6 +16,7 @@ class SplashView: ViewWithXib {
         super.viewWithXibCommonInit()
         
         setupAnimatingImageView()
+//        view.backgroundColor = UIColor.uteachBackground()
     }
     
     //MARK: - Setup

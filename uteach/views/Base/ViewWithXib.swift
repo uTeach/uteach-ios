@@ -16,13 +16,12 @@ class ViewWithXib: UIView {
     //MARK - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         viewWithXibCommonInit()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+
         viewWithXibCommonInit()
     }
     

@@ -27,8 +27,16 @@ class NavigationFlowManager: NSObject {
     }
     
     //MARK: - Presentations
-    func presentUserCredentialsAnimated(_ animated: Bool) {
+    func presentSplashControllerAnimated(_ animated: Bool) {
+        presentViewController(SplashViewController(), animated: animated)
+    }
+    
+    func presentUserCredentialsControllerAnimated(_ animated: Bool) {
         presentViewController(UserCredentialsViewController(), animated: animated);
+    }
+    
+    func presentHomeControllerAnimated(_ animated: Bool) {
+        presentViewController(HomeViewController(), animated: animated)
     }
     
     //MARK: - Utils
