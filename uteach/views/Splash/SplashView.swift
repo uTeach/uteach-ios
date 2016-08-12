@@ -16,7 +16,6 @@ class SplashView: ControllerView {
         super.viewWithXibCommonInit()
         
         setupAnimatingImageView()
-//        view.backgroundColor = UIColor.uteachBackground()
     }
     
     //MARK: - Setup

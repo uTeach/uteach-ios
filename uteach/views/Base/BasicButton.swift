@@ -41,8 +41,7 @@ class BasicButton: UIButton {
     func layoutBasicButton() {
         layer.masksToBounds = true
         layer.cornerRadius = self.frame.size.height / 2.0
-        layer.borderWidth = kBasicButtonBorderWidth
-        layer.borderColor = backgroundColor?.cgColor
+        layer.backgroundColor = backgroundColor?.cgColor
     }
     
     //MARK - Style

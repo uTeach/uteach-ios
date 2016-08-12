@@ -16,6 +16,10 @@ class HomeView: ControllerView {
     }
     
     //MARK: - Setup
+ 
+    @IBAction func modalNotificationButtonWasTapped(_ sender: AnyObject) {
+        ModalNotification.popModalNotification(withNotificationView: UIView())
+    }
     
-
+    
 }

@@ -16,16 +16,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6w-Vk-gU1">
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LX-cS-ZfE">
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="modalNotificationButtonWasTapped:" destination="-1" eventType="touchUpInside" id="2LP-GC-Rcl"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.42745098039215684" green="0.94117647058823528" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="W6w-Vk-gU1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2Kw-pf-sIU"/>
-                <constraint firstItem="W6w-Vk-gU1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="66i-3A-n8o"/>
+                <constraint firstItem="5LX-cS-ZfE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0sT-yD-Qcf"/>
+                <constraint firstItem="5LX-cS-ZfE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uZj-Dq-fNT"/>
             </constraints>
         </view>
     </objects>

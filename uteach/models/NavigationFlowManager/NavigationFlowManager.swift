@@ -41,7 +41,7 @@ class NavigationFlowManager: NSObject {
     
     //MARK: - Utils
     private func presentViewController(_ viewController: UIViewController, animated:Bool) {
-        self.presentViewController(viewController, animated: animated, completion: nil)
+        presentViewController(viewController, animated: animated, completion: nil)
     }
     
     private func presentViewController(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
@@ -54,6 +54,8 @@ class NavigationFlowManager: NSObject {
     
     private func topMostViewController() -> UIViewController? {
         var topViewController = window?.rootViewController
+        
+        print(topViewController)
         
         while ((topViewController?.presentedViewController) != nil) {
             topViewController = topViewController?.presentedViewController
