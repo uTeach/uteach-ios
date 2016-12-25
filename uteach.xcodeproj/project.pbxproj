@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D17BC941E0C73870099FF76 /* SEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BC921E0C73870099FF76 /* SEViewController.m */; };
-		1D17BC951E0C73870099FF76 /* SEViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D17BC931E0C73870099FF76 /* SEViewController.xib */; };
-		1D17BC991E0C73A30099FF76 /* SENavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BC971E0C73A30099FF76 /* SENavigationController.m */; };
-		1D17BC9A1E0C73A30099FF76 /* SENavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D17BC981E0C73A30099FF76 /* SENavigationController.xib */; };
+		1D17BC941E0C73870099FF76 /* UTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BC921E0C73870099FF76 /* UTViewController.m */; };
+		1D17BC951E0C73870099FF76 /* UTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D17BC931E0C73870099FF76 /* UTViewController.xib */; };
+		1D17BC991E0C73A30099FF76 /* UTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BC971E0C73A30099FF76 /* UTNavigationController.m */; };
+		1D17BC9A1E0C73A30099FF76 /* UTNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D17BC981E0C73A30099FF76 /* UTNavigationController.xib */; };
 		1D17BCBF1E0C74000099FF76 /* SERemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCA41E0C74000099FF76 /* SERemoteObject.m */; };
 		1D17BCC21E0C74000099FF76 /* SEGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCAB1E0C74000099FF76 /* SEGetRequest.m */; };
 		1D17BCC31E0C74000099FF76 /* SEGetJsonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCAD1E0C74000099FF76 /* SEGetJsonRequest.m */; };
@@ -19,10 +19,13 @@
 		1D17BCC71E0C74000099FF76 /* SERequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB51E0C74000099FF76 /* SERequest.m */; };
 		1D17BCC81E0C74000099FF76 /* SERequestConfigs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB71E0C74000099FF76 /* SERequestConfigs.m */; };
 		1D17BCC91E0C74000099FF76 /* SERequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB91E0C74000099FF76 /* SERequestManager.m */; };
+		1D259C071E103AAE00677ED4 /* UTNavigationFlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D259C061E103AAE00677ED4 /* UTNavigationFlowManager.m */; };
+		1D259C0A1E103FFE00677ED4 /* UIColor+UTColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D259C091E103FFE00677ED4 /* UIColor+UTColorPalette.m */; };
+		1D259C101E1040CF00677ED4 /* UTSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D259C0E1E1040CF00677ED4 /* UTSplashViewController.m */; };
+		1D259C111E1040CF00677ED4 /* UTSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D259C0F1E1040CF00677ED4 /* UTSplashViewController.xib */; };
 		1D60C4801E0C665C008DD206 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D60C47F1E0C665C008DD206 /* main.m */; };
 		1D60C4831E0C665C008DD206 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D60C4821E0C665C008DD206 /* AppDelegate.m */; };
 		1D60C4861E0C665C008DD206 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D60C4851E0C665C008DD206 /* ViewController.m */; };
-		1D60C4891E0C665C008DD206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D60C4871E0C665C008DD206 /* Main.storyboard */; };
 		1D60C48C1E0C665C008DD206 /* uteach.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D60C48A1E0C665C008DD206 /* uteach.xcdatamodeld */; };
 		1D60C48E1E0C665C008DD206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D60C48D1E0C665C008DD206 /* Assets.xcassets */; };
 		1D60C4911E0C665C008DD206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D60C48F1E0C665C008DD206 /* LaunchScreen.storyboard */; };
@@ -30,12 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D17BC911E0C73870099FF76 /* SEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEViewController.h; sourceTree = "<group>"; };
-		1D17BC921E0C73870099FF76 /* SEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEViewController.m; sourceTree = "<group>"; };
-		1D17BC931E0C73870099FF76 /* SEViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SEViewController.xib; sourceTree = "<group>"; };
-		1D17BC961E0C73A30099FF76 /* SENavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SENavigationController.h; sourceTree = "<group>"; };
-		1D17BC971E0C73A30099FF76 /* SENavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SENavigationController.m; sourceTree = "<group>"; };
-		1D17BC981E0C73A30099FF76 /* SENavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SENavigationController.xib; sourceTree = "<group>"; };
+		1D17BC911E0C73870099FF76 /* UTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTViewController.h; sourceTree = "<group>"; };
+		1D17BC921E0C73870099FF76 /* UTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTViewController.m; sourceTree = "<group>"; };
+		1D17BC931E0C73870099FF76 /* UTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTViewController.xib; sourceTree = "<group>"; };
+		1D17BC961E0C73A30099FF76 /* UTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTNavigationController.h; sourceTree = "<group>"; };
+		1D17BC971E0C73A30099FF76 /* UTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTNavigationController.m; sourceTree = "<group>"; };
+		1D17BC981E0C73A30099FF76 /* UTNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTNavigationController.xib; sourceTree = "<group>"; };
 		1D17BCA31E0C74000099FF76 /* SERemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERemoteObject.h; sourceTree = "<group>"; };
 		1D17BCA41E0C74000099FF76 /* SERemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERemoteObject.m; sourceTree = "<group>"; };
 		1D17BCAA1E0C74000099FF76 /* SEGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGetRequest.h; sourceTree = "<group>"; };
@@ -52,13 +55,19 @@
 		1D17BCB71E0C74000099FF76 /* SERequestConfigs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERequestConfigs.m; sourceTree = "<group>"; };
 		1D17BCB81E0C74000099FF76 /* SERequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERequestManager.h; sourceTree = "<group>"; };
 		1D17BCB91E0C74000099FF76 /* SERequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERequestManager.m; sourceTree = "<group>"; };
+		1D259C051E103AAE00677ED4 /* UTNavigationFlowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTNavigationFlowManager.h; sourceTree = "<group>"; };
+		1D259C061E103AAE00677ED4 /* UTNavigationFlowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTNavigationFlowManager.m; sourceTree = "<group>"; };
+		1D259C081E103FFE00677ED4 /* UIColor+UTColorPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UTColorPalette.h"; sourceTree = "<group>"; };
+		1D259C091E103FFE00677ED4 /* UIColor+UTColorPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UTColorPalette.m"; sourceTree = "<group>"; };
+		1D259C0D1E1040CF00677ED4 /* UTSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTSplashViewController.h; sourceTree = "<group>"; };
+		1D259C0E1E1040CF00677ED4 /* UTSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTSplashViewController.m; sourceTree = "<group>"; };
+		1D259C0F1E1040CF00677ED4 /* UTSplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTSplashViewController.xib; sourceTree = "<group>"; };
 		1D60C47B1E0C665C008DD206 /* uteach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uteach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D60C47F1E0C665C008DD206 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D60C4811E0C665C008DD206 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D60C4821E0C665C008DD206 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D60C4841E0C665C008DD206 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1D60C4851E0C665C008DD206 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1D60C4881E0C665C008DD206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D60C48B1E0C665C008DD206 /* uteach.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = uteach.xcdatamodel; sourceTree = "<group>"; };
 		1D60C48D1E0C665C008DD206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D60C4901E0C665C008DD206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,6 +92,8 @@
 		1D17BC8B1E0C73740099FF76 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D259C0B1E10405A00677ED4 /* Splash */,
+				1D259C0C1E10405A00677ED4 /* Home */,
 				1D17BC8C1E0C73740099FF76 /* Base */,
 			);
 			path = controllers;
@@ -91,12 +102,12 @@
 		1D17BC8C1E0C73740099FF76 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				1D17BC911E0C73870099FF76 /* SEViewController.h */,
-				1D17BC921E0C73870099FF76 /* SEViewController.m */,
-				1D17BC931E0C73870099FF76 /* SEViewController.xib */,
-				1D17BC961E0C73A30099FF76 /* SENavigationController.h */,
-				1D17BC971E0C73A30099FF76 /* SENavigationController.m */,
-				1D17BC981E0C73A30099FF76 /* SENavigationController.xib */,
+				1D17BC911E0C73870099FF76 /* UTViewController.h */,
+				1D17BC921E0C73870099FF76 /* UTViewController.m */,
+				1D17BC931E0C73870099FF76 /* UTViewController.xib */,
+				1D17BC961E0C73A30099FF76 /* UTNavigationController.h */,
+				1D17BC971E0C73A30099FF76 /* UTNavigationController.m */,
+				1D17BC981E0C73A30099FF76 /* UTNavigationController.xib */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -104,6 +115,7 @@
 		1D17BC8D1E0C73740099FF76 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				1D259C041E103AAE00677ED4 /* NavigationFlowManager */,
 				1D17BC9B1E0C73B90099FF76 /* Networking */,
 				1D17BC8E1E0C73740099FF76 /* Base */,
 			);
@@ -113,6 +125,8 @@
 		1D17BC8E1E0C73740099FF76 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				1D259C081E103FFE00677ED4 /* UIColor+UTColorPalette.h */,
+				1D259C091E103FFE00677ED4 /* UIColor+UTColorPalette.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -171,6 +185,32 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		1D259C041E103AAE00677ED4 /* NavigationFlowManager */ = {
+			isa = PBXGroup;
+			children = (
+				1D259C051E103AAE00677ED4 /* UTNavigationFlowManager.h */,
+				1D259C061E103AAE00677ED4 /* UTNavigationFlowManager.m */,
+			);
+			path = NavigationFlowManager;
+			sourceTree = "<group>";
+		};
+		1D259C0B1E10405A00677ED4 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				1D259C0D1E1040CF00677ED4 /* UTSplashViewController.h */,
+				1D259C0E1E1040CF00677ED4 /* UTSplashViewController.m */,
+				1D259C0F1E1040CF00677ED4 /* UTSplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		1D259C0C1E10405A00677ED4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		1D60C4721E0C665C008DD206 = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +239,6 @@
 				1D60C4821E0C665C008DD206 /* AppDelegate.m */,
 				1D60C4841E0C665C008DD206 /* ViewController.h */,
 				1D60C4851E0C665C008DD206 /* ViewController.m */,
-				1D60C4871E0C665C008DD206 /* Main.storyboard */,
 				1D60C48D1E0C665C008DD206 /* Assets.xcassets */,
 				1D60C48F1E0C665C008DD206 /* LaunchScreen.storyboard */,
 				1D60C4921E0C665C008DD206 /* Info.plist */,
@@ -296,11 +335,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D17BC951E0C73870099FF76 /* SEViewController.xib in Resources */,
+				1D17BC951E0C73870099FF76 /* UTViewController.xib in Resources */,
 				1D60C4911E0C665C008DD206 /* LaunchScreen.storyboard in Resources */,
-				1D17BC9A1E0C73A30099FF76 /* SENavigationController.xib in Resources */,
+				1D259C111E1040CF00677ED4 /* UTSplashViewController.xib in Resources */,
+				1D17BC9A1E0C73A30099FF76 /* UTNavigationController.xib in Resources */,
 				1D60C48E1E0C665C008DD206 /* Assets.xcassets in Resources */,
-				1D60C4891E0C665C008DD206 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,18 +399,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60C4861E0C665C008DD206 /* ViewController.m in Sources */,
+				1D259C0A1E103FFE00677ED4 /* UIColor+UTColorPalette.m in Sources */,
 				1D17BCC21E0C74000099FF76 /* SEGetRequest.m in Sources */,
 				1D60C48C1E0C665C008DD206 /* uteach.xcdatamodeld in Sources */,
 				1D17BCC61E0C74000099FF76 /* SEPostRequest.m in Sources */,
+				1D259C071E103AAE00677ED4 /* UTNavigationFlowManager.m in Sources */,
 				1D60C4831E0C665C008DD206 /* AppDelegate.m in Sources */,
 				1D17BCC71E0C74000099FF76 /* SERequest.m in Sources */,
-				1D17BC941E0C73870099FF76 /* SEViewController.m in Sources */,
+				1D17BC941E0C73870099FF76 /* UTViewController.m in Sources */,
 				1D17BCC91E0C74000099FF76 /* SERequestManager.m in Sources */,
 				1D17BCC81E0C74000099FF76 /* SERequestConfigs.m in Sources */,
 				1D60C4801E0C665C008DD206 /* main.m in Sources */,
 				1D17BCBF1E0C74000099FF76 /* SERemoteObject.m in Sources */,
-				1D17BC991E0C73A30099FF76 /* SENavigationController.m in Sources */,
+				1D17BC991E0C73A30099FF76 /* UTNavigationController.m in Sources */,
 				1D17BCC31E0C74000099FF76 /* SEGetJsonRequest.m in Sources */,
+				1D259C101E1040CF00677ED4 /* UTSplashViewController.m in Sources */,
 				1D17BCC51E0C74000099FF76 /* SEPostJsonRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,14 +421,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1D60C4871E0C665C008DD206 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D60C4881E0C665C008DD206 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D60C48F1E0C665C008DD206 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -496,7 +530,7 @@
 				DEVELOPMENT_TEAM = Y8MVXZDBG2;
 				INFOPLIST_FILE = uteach/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.uteachapp.UTeach-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uteachapp.UTeach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -509,7 +543,7 @@
 				DEVELOPMENT_TEAM = Y8MVXZDBG2;
 				INFOPLIST_FILE = uteach/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.uteachapp.UTeach-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uteachapp.UTeach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

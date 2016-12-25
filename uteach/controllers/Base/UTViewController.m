@@ -1,18 +1,18 @@
 //
-//  SENavigationController.m
+//  SEViewController.m
 //  uteach
 //
 //  Created by Santiago Lazzari on 12/22/16.
 //  Copyright © 2016 Santiago Lazzari. All rights reserved.
 //
 
-#import "SENavigationController.h"
+#import "UTViewController.h"
 
-@interface SENavigationController ()
+@interface UTViewController ()
 
 @end
 
-@implementation SENavigationController
+@implementation UTViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

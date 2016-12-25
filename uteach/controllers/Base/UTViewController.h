@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SEViewController : UIViewController
+@interface UTViewController : UIViewController
 
 @end

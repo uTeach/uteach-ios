@@ -16,7 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self setupNavigationFlowManager];
+    
     return YES;
 }
 
@@ -47,6 +48,13 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+#pragma mark - Setup
+
+- (void)setupNavigationFlowManager {
+    self.navigationFlowManager = [UTNavigationFlowManager sharedInstance];
+    [self.navigationFlowManager presentSplashViewControllerAnimated:NO];
 }
 
 
