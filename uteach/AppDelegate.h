@@ -10,6 +10,11 @@
 #import <CoreData/CoreData.h>
 
 #import "UTNavigationFlowManager.h"
+#import "UTRequestManager.h"
+
+#define kAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+#define kNavigationFlowManager kAppDelegate.navigationFlowManager
+#define kRequestManager kAppDelegate.requestManager
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -19,8 +24,9 @@
 
 @property (strong, nonatomic) UTNavigationFlowManager *navigationFlowManager;
 
-- (void)saveContext;
+@property (strong, nonatomic) UTRequestManager *requestManager;
 
+- (void)saveContext;
 
 @end
 

@@ -9,8 +9,13 @@
 #import "UTSplashViewController.h"
 
 #import "UIColor+UTColorPalette.h"
+#import "FLAnimatedImage.h"
+#import "AppDelegate.h"
 
 @interface UTSplashViewController ()
+
+@property (strong, nonatomic) FLAnimatedImage *animatingImage;
+@property (weak, nonatomic) IBOutlet FLAnimatedImageView *animatingImageView;
 
 @end
 
@@ -22,12 +27,32 @@
     [super viewDidLoad];
 
     [self setupView];
+    [self login];
 }
 
 #pragma mark - Setup
 
 - (void)setupView {
     self.view.backgroundColor = [UIColor utGreen];
+    [self setupAnimatingImage];
+}
+
+- (void)setupAnimatingImage {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource: @"splash_animation" ofType: @"gif"];
+    NSData *gifData = [NSData dataWithContentsOfFile: filePath];
+    
+    self.animatingImage = [[FLAnimatedImage alloc] initWithAnimatedGIFData:gifData];
+    self.animatingImageView.animatedImage = self.animatingImage;
+    [self.animatingImageView startAnimating];
+}
+
+
+#pragma mark - Login
+
+- (void)login {
+    [NSTimer scheduledTimerWithTimeInterval:3 repeats:NO block:^(NSTimer * _Nonnull timer) {
+        [kNavigationFlowManager presentHomeViewControllerAnimated:YES];
+    }];
 }
 
 @end

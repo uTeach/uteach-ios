@@ -11,14 +11,20 @@
 		1D17BC951E0C73870099FF76 /* UTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D17BC931E0C73870099FF76 /* UTViewController.xib */; };
 		1D17BC991E0C73A30099FF76 /* UTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BC971E0C73A30099FF76 /* UTNavigationController.m */; };
 		1D17BC9A1E0C73A30099FF76 /* UTNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D17BC981E0C73A30099FF76 /* UTNavigationController.xib */; };
-		1D17BCBF1E0C74000099FF76 /* SERemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCA41E0C74000099FF76 /* SERemoteObject.m */; };
-		1D17BCC21E0C74000099FF76 /* SEGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCAB1E0C74000099FF76 /* SEGetRequest.m */; };
-		1D17BCC31E0C74000099FF76 /* SEGetJsonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCAD1E0C74000099FF76 /* SEGetJsonRequest.m */; };
-		1D17BCC51E0C74000099FF76 /* SEPostJsonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB11E0C74000099FF76 /* SEPostJsonRequest.m */; };
-		1D17BCC61E0C74000099FF76 /* SEPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB31E0C74000099FF76 /* SEPostRequest.m */; };
-		1D17BCC71E0C74000099FF76 /* SERequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB51E0C74000099FF76 /* SERequest.m */; };
-		1D17BCC81E0C74000099FF76 /* SERequestConfigs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB71E0C74000099FF76 /* SERequestConfigs.m */; };
-		1D17BCC91E0C74000099FF76 /* SERequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB91E0C74000099FF76 /* SERequestManager.m */; };
+		1D17BCBF1E0C74000099FF76 /* UTRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCA41E0C74000099FF76 /* UTRemoteObject.m */; };
+		1D17BCC21E0C74000099FF76 /* UTGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCAB1E0C74000099FF76 /* UTGetRequest.m */; };
+		1D17BCC31E0C74000099FF76 /* UTGetJsonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCAD1E0C74000099FF76 /* UTGetJsonRequest.m */; };
+		1D17BCC51E0C74000099FF76 /* UTPostJsonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB11E0C74000099FF76 /* UTPostJsonRequest.m */; };
+		1D17BCC61E0C74000099FF76 /* UTPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB31E0C74000099FF76 /* UTPostRequest.m */; };
+		1D17BCC71E0C74000099FF76 /* UTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB51E0C74000099FF76 /* UTRequest.m */; };
+		1D17BCC81E0C74000099FF76 /* UTRequestConfigs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB71E0C74000099FF76 /* UTRequestConfigs.m */; };
+		1D17BCC91E0C74000099FF76 /* UTRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17BCB91E0C74000099FF76 /* UTRequestManager.m */; };
+		1D1B39661E3A146A00F9BD55 /* UTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1B39641E3A146A00F9BD55 /* UTHomeViewController.m */; };
+		1D1B39671E3A146A00F9BD55 /* UTHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1B39651E3A146A00F9BD55 /* UTHomeViewController.xib */; };
+		1D1B396C1E3A1A8700F9BD55 /* UTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1B396A1E3A1A8700F9BD55 /* UTLoginViewController.m */; };
+		1D1B396D1E3A1A8800F9BD55 /* UTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1B396B1E3A1A8700F9BD55 /* UTLoginViewController.xib */; };
+		1D1B39721E3A1D1C00F9BD55 /* UTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1B39701E3A1D1C00F9BD55 /* UTRegisterViewController.m */; };
+		1D1B39731E3A1D1C00F9BD55 /* UTRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1B39711E3A1D1C00F9BD55 /* UTRegisterViewController.xib */; };
 		1D259C071E103AAE00677ED4 /* UTNavigationFlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D259C061E103AAE00677ED4 /* UTNavigationFlowManager.m */; };
 		1D259C0A1E103FFE00677ED4 /* UIColor+UTColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D259C091E103FFE00677ED4 /* UIColor+UTColorPalette.m */; };
 		1D259C101E1040CF00677ED4 /* UTSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D259C0E1E1040CF00677ED4 /* UTSplashViewController.m */; };
@@ -29,6 +35,7 @@
 		1D60C48C1E0C665C008DD206 /* uteach.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D60C48A1E0C665C008DD206 /* uteach.xcdatamodeld */; };
 		1D60C48E1E0C665C008DD206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D60C48D1E0C665C008DD206 /* Assets.xcassets */; };
 		1D60C4911E0C665C008DD206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D60C48F1E0C665C008DD206 /* LaunchScreen.storyboard */; };
+		1DE0D7EC1E31A4D6000B246C /* splash_animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D7EB1E31A4D6000B246C /* splash_animation.gif */; };
 		F1B8146FAE91E34A6815C6C5 /* libPods-uteach.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE19D51D07738601E0DC6C83 /* libPods-uteach.a */; };
 /* End PBXBuildFile section */
 
@@ -39,22 +46,31 @@
 		1D17BC961E0C73A30099FF76 /* UTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTNavigationController.h; sourceTree = "<group>"; };
 		1D17BC971E0C73A30099FF76 /* UTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTNavigationController.m; sourceTree = "<group>"; };
 		1D17BC981E0C73A30099FF76 /* UTNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTNavigationController.xib; sourceTree = "<group>"; };
-		1D17BCA31E0C74000099FF76 /* SERemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERemoteObject.h; sourceTree = "<group>"; };
-		1D17BCA41E0C74000099FF76 /* SERemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERemoteObject.m; sourceTree = "<group>"; };
-		1D17BCAA1E0C74000099FF76 /* SEGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGetRequest.h; sourceTree = "<group>"; };
-		1D17BCAB1E0C74000099FF76 /* SEGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGetRequest.m; sourceTree = "<group>"; };
-		1D17BCAC1E0C74000099FF76 /* SEGetJsonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGetJsonRequest.h; sourceTree = "<group>"; };
-		1D17BCAD1E0C74000099FF76 /* SEGetJsonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGetJsonRequest.m; sourceTree = "<group>"; };
-		1D17BCB01E0C74000099FF76 /* SEPostJsonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPostJsonRequest.h; sourceTree = "<group>"; };
-		1D17BCB11E0C74000099FF76 /* SEPostJsonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPostJsonRequest.m; sourceTree = "<group>"; };
-		1D17BCB21E0C74000099FF76 /* SEPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPostRequest.h; sourceTree = "<group>"; };
-		1D17BCB31E0C74000099FF76 /* SEPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPostRequest.m; sourceTree = "<group>"; };
-		1D17BCB41E0C74000099FF76 /* SERequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERequest.h; sourceTree = "<group>"; };
-		1D17BCB51E0C74000099FF76 /* SERequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERequest.m; sourceTree = "<group>"; };
-		1D17BCB61E0C74000099FF76 /* SERequestConfigs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERequestConfigs.h; sourceTree = "<group>"; };
-		1D17BCB71E0C74000099FF76 /* SERequestConfigs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERequestConfigs.m; sourceTree = "<group>"; };
-		1D17BCB81E0C74000099FF76 /* SERequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERequestManager.h; sourceTree = "<group>"; };
-		1D17BCB91E0C74000099FF76 /* SERequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERequestManager.m; sourceTree = "<group>"; };
+		1D17BCA31E0C74000099FF76 /* UTRemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTRemoteObject.h; sourceTree = "<group>"; };
+		1D17BCA41E0C74000099FF76 /* UTRemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTRemoteObject.m; sourceTree = "<group>"; };
+		1D17BCAA1E0C74000099FF76 /* UTGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTGetRequest.h; sourceTree = "<group>"; };
+		1D17BCAB1E0C74000099FF76 /* UTGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTGetRequest.m; sourceTree = "<group>"; };
+		1D17BCAC1E0C74000099FF76 /* UTGetJsonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTGetJsonRequest.h; sourceTree = "<group>"; };
+		1D17BCAD1E0C74000099FF76 /* UTGetJsonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTGetJsonRequest.m; sourceTree = "<group>"; };
+		1D17BCB01E0C74000099FF76 /* UTPostJsonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTPostJsonRequest.h; sourceTree = "<group>"; };
+		1D17BCB11E0C74000099FF76 /* UTPostJsonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTPostJsonRequest.m; sourceTree = "<group>"; };
+		1D17BCB21E0C74000099FF76 /* UTPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTPostRequest.h; sourceTree = "<group>"; };
+		1D17BCB31E0C74000099FF76 /* UTPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTPostRequest.m; sourceTree = "<group>"; };
+		1D17BCB41E0C74000099FF76 /* UTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTRequest.h; sourceTree = "<group>"; };
+		1D17BCB51E0C74000099FF76 /* UTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTRequest.m; sourceTree = "<group>"; };
+		1D17BCB61E0C74000099FF76 /* UTRequestConfigs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTRequestConfigs.h; sourceTree = "<group>"; };
+		1D17BCB71E0C74000099FF76 /* UTRequestConfigs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTRequestConfigs.m; sourceTree = "<group>"; };
+		1D17BCB81E0C74000099FF76 /* UTRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTRequestManager.h; sourceTree = "<group>"; };
+		1D17BCB91E0C74000099FF76 /* UTRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTRequestManager.m; sourceTree = "<group>"; };
+		1D1B39631E3A146A00F9BD55 /* UTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTHomeViewController.h; sourceTree = "<group>"; };
+		1D1B39641E3A146A00F9BD55 /* UTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTHomeViewController.m; sourceTree = "<group>"; };
+		1D1B39651E3A146A00F9BD55 /* UTHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTHomeViewController.xib; sourceTree = "<group>"; };
+		1D1B39691E3A1A8700F9BD55 /* UTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTLoginViewController.h; sourceTree = "<group>"; };
+		1D1B396A1E3A1A8700F9BD55 /* UTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTLoginViewController.m; sourceTree = "<group>"; };
+		1D1B396B1E3A1A8700F9BD55 /* UTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTLoginViewController.xib; sourceTree = "<group>"; };
+		1D1B396F1E3A1D1C00F9BD55 /* UTRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTRegisterViewController.h; sourceTree = "<group>"; };
+		1D1B39701E3A1D1C00F9BD55 /* UTRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTRegisterViewController.m; sourceTree = "<group>"; };
+		1D1B39711E3A1D1C00F9BD55 /* UTRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTRegisterViewController.xib; sourceTree = "<group>"; };
 		1D259C051E103AAE00677ED4 /* UTNavigationFlowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTNavigationFlowManager.h; sourceTree = "<group>"; };
 		1D259C061E103AAE00677ED4 /* UTNavigationFlowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTNavigationFlowManager.m; sourceTree = "<group>"; };
 		1D259C081E103FFE00677ED4 /* UIColor+UTColorPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UTColorPalette.h"; sourceTree = "<group>"; };
@@ -72,6 +88,7 @@
 		1D60C48D1E0C665C008DD206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D60C4901E0C665C008DD206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D60C4921E0C665C008DD206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE0D7EB1E31A4D6000B246C /* splash_animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = splash_animation.gif; sourceTree = "<group>"; };
 		245AD7E557C7E52C01834495 /* Pods-uteach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uteach/Pods-uteach.debug.xcconfig"; sourceTree = "<group>"; };
 		8AD9D08F9CB8E3C2186B6634 /* Pods-uteach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteach.release.xcconfig"; path = "Pods/Target Support Files/Pods-uteach/Pods-uteach.release.xcconfig"; sourceTree = "<group>"; };
 		DE19D51D07738601E0DC6C83 /* libPods-uteach.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-uteach.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +109,8 @@
 		1D17BC8B1E0C73740099FF76 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D1B396E1E3A1D0300F9BD55 /* Register */,
+				1D1B39681E3A1A5100F9BD55 /* Login */,
 				1D259C0B1E10405A00677ED4 /* Splash */,
 				1D259C0C1E10405A00677ED4 /* Home */,
 				1D17BC8C1E0C73740099FF76 /* Base */,
@@ -158,8 +177,8 @@
 		1D17BC9C1E0C74000099FF76 /* RemoteObject */ = {
 			isa = PBXGroup;
 			children = (
-				1D17BCA31E0C74000099FF76 /* SERemoteObject.h */,
-				1D17BCA41E0C74000099FF76 /* SERemoteObject.m */,
+				1D17BCA31E0C74000099FF76 /* UTRemoteObject.h */,
+				1D17BCA41E0C74000099FF76 /* UTRemoteObject.m */,
 			);
 			path = RemoteObject;
 			sourceTree = "<group>";
@@ -167,22 +186,42 @@
 		1D17BCA91E0C74000099FF76 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				1D17BCAA1E0C74000099FF76 /* SEGetRequest.h */,
-				1D17BCAB1E0C74000099FF76 /* SEGetRequest.m */,
-				1D17BCAC1E0C74000099FF76 /* SEGetJsonRequest.h */,
-				1D17BCAD1E0C74000099FF76 /* SEGetJsonRequest.m */,
-				1D17BCB01E0C74000099FF76 /* SEPostJsonRequest.h */,
-				1D17BCB11E0C74000099FF76 /* SEPostJsonRequest.m */,
-				1D17BCB21E0C74000099FF76 /* SEPostRequest.h */,
-				1D17BCB31E0C74000099FF76 /* SEPostRequest.m */,
-				1D17BCB41E0C74000099FF76 /* SERequest.h */,
-				1D17BCB51E0C74000099FF76 /* SERequest.m */,
-				1D17BCB61E0C74000099FF76 /* SERequestConfigs.h */,
-				1D17BCB71E0C74000099FF76 /* SERequestConfigs.m */,
-				1D17BCB81E0C74000099FF76 /* SERequestManager.h */,
-				1D17BCB91E0C74000099FF76 /* SERequestManager.m */,
+				1D17BCAA1E0C74000099FF76 /* UTGetRequest.h */,
+				1D17BCAB1E0C74000099FF76 /* UTGetRequest.m */,
+				1D17BCAC1E0C74000099FF76 /* UTGetJsonRequest.h */,
+				1D17BCAD1E0C74000099FF76 /* UTGetJsonRequest.m */,
+				1D17BCB01E0C74000099FF76 /* UTPostJsonRequest.h */,
+				1D17BCB11E0C74000099FF76 /* UTPostJsonRequest.m */,
+				1D17BCB21E0C74000099FF76 /* UTPostRequest.h */,
+				1D17BCB31E0C74000099FF76 /* UTPostRequest.m */,
+				1D17BCB41E0C74000099FF76 /* UTRequest.h */,
+				1D17BCB51E0C74000099FF76 /* UTRequest.m */,
+				1D17BCB61E0C74000099FF76 /* UTRequestConfigs.h */,
+				1D17BCB71E0C74000099FF76 /* UTRequestConfigs.m */,
+				1D17BCB81E0C74000099FF76 /* UTRequestManager.h */,
+				1D17BCB91E0C74000099FF76 /* UTRequestManager.m */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		1D1B39681E3A1A5100F9BD55 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1D1B39691E3A1A8700F9BD55 /* UTLoginViewController.h */,
+				1D1B396A1E3A1A8700F9BD55 /* UTLoginViewController.m */,
+				1D1B396B1E3A1A8700F9BD55 /* UTLoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1D1B396E1E3A1D0300F9BD55 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				1D1B396F1E3A1D1C00F9BD55 /* UTRegisterViewController.h */,
+				1D1B39701E3A1D1C00F9BD55 /* UTRegisterViewController.m */,
+				1D1B39711E3A1D1C00F9BD55 /* UTRegisterViewController.xib */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		1D259C041E103AAE00677ED4 /* NavigationFlowManager */ = {
@@ -207,6 +246,9 @@
 		1D259C0C1E10405A00677ED4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1D1B39631E3A146A00F9BD55 /* UTHomeViewController.h */,
+				1D1B39641E3A146A00F9BD55 /* UTHomeViewController.m */,
+				1D1B39651E3A146A00F9BD55 /* UTHomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -232,6 +274,7 @@
 		1D60C47D1E0C665C008DD206 /* uteach */ = {
 			isa = PBXGroup;
 			children = (
+				1DE0D7EA1E31A4D6000B246C /* assets */,
 				1D17BC8B1E0C73740099FF76 /* controllers */,
 				1D17BC8D1E0C73740099FF76 /* models */,
 				1D17BC8F1E0C73740099FF76 /* views */,
@@ -254,6 +297,14 @@
 				1D60C47F1E0C665C008DD206 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DE0D7EA1E31A4D6000B246C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				1DE0D7EB1E31A4D6000B246C /* splash_animation.gif */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 		2F35FF23114ECF0DCC1A9091 /* Pods */ = {
@@ -335,10 +386,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D1B39731E3A1D1C00F9BD55 /* UTRegisterViewController.xib in Resources */,
 				1D17BC951E0C73870099FF76 /* UTViewController.xib in Resources */,
+				1DE0D7EC1E31A4D6000B246C /* splash_animation.gif in Resources */,
 				1D60C4911E0C665C008DD206 /* LaunchScreen.storyboard in Resources */,
+				1D1B396D1E3A1A8800F9BD55 /* UTLoginViewController.xib in Resources */,
 				1D259C111E1040CF00677ED4 /* UTSplashViewController.xib in Resources */,
 				1D17BC9A1E0C73A30099FF76 /* UTNavigationController.xib in Resources */,
+				1D1B39671E3A146A00F9BD55 /* UTHomeViewController.xib in Resources */,
 				1D60C48E1E0C665C008DD206 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,21 +455,24 @@
 			files = (
 				1D60C4861E0C665C008DD206 /* ViewController.m in Sources */,
 				1D259C0A1E103FFE00677ED4 /* UIColor+UTColorPalette.m in Sources */,
-				1D17BCC21E0C74000099FF76 /* SEGetRequest.m in Sources */,
+				1D1B39661E3A146A00F9BD55 /* UTHomeViewController.m in Sources */,
+				1D17BCC21E0C74000099FF76 /* UTGetRequest.m in Sources */,
 				1D60C48C1E0C665C008DD206 /* uteach.xcdatamodeld in Sources */,
-				1D17BCC61E0C74000099FF76 /* SEPostRequest.m in Sources */,
+				1D17BCC61E0C74000099FF76 /* UTPostRequest.m in Sources */,
 				1D259C071E103AAE00677ED4 /* UTNavigationFlowManager.m in Sources */,
 				1D60C4831E0C665C008DD206 /* AppDelegate.m in Sources */,
-				1D17BCC71E0C74000099FF76 /* SERequest.m in Sources */,
+				1D17BCC71E0C74000099FF76 /* UTRequest.m in Sources */,
+				1D1B396C1E3A1A8700F9BD55 /* UTLoginViewController.m in Sources */,
+				1D1B39721E3A1D1C00F9BD55 /* UTRegisterViewController.m in Sources */,
 				1D17BC941E0C73870099FF76 /* UTViewController.m in Sources */,
-				1D17BCC91E0C74000099FF76 /* SERequestManager.m in Sources */,
-				1D17BCC81E0C74000099FF76 /* SERequestConfigs.m in Sources */,
+				1D17BCC91E0C74000099FF76 /* UTRequestManager.m in Sources */,
+				1D17BCC81E0C74000099FF76 /* UTRequestConfigs.m in Sources */,
 				1D60C4801E0C665C008DD206 /* main.m in Sources */,
-				1D17BCBF1E0C74000099FF76 /* SERemoteObject.m in Sources */,
+				1D17BCBF1E0C74000099FF76 /* UTRemoteObject.m in Sources */,
 				1D17BC991E0C73A30099FF76 /* UTNavigationController.m in Sources */,
-				1D17BCC31E0C74000099FF76 /* SEGetJsonRequest.m in Sources */,
+				1D17BCC31E0C74000099FF76 /* UTGetJsonRequest.m in Sources */,
 				1D259C101E1040CF00677ED4 /* UTSplashViewController.m in Sources */,
-				1D17BCC51E0C74000099FF76 /* SEPostJsonRequest.m in Sources */,
+				1D17BCC51E0C74000099FF76 /* UTPostJsonRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

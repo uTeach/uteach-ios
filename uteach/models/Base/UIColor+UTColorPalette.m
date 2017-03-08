@@ -15,7 +15,7 @@
 }
 
 + (UIColor *)utGreen {
-    return [UIColor colorWithRed:97 green:220 blue:114];
+    return [UIColor colorWithRed:121 green:239 blue:157];
 }
 
 @end

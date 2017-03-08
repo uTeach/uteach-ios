@@ -17,5 +17,8 @@
 + (instancetype)sharedInstance;
 
 - (void)presentSplashViewControllerAnimated:(BOOL)animated;
+- (void)presentHomeViewControllerAnimated:(BOOL)animated;
+- (void)presentLoginViewControllerAnimated:(BOOL)animated;
+- (void)presentRegisterViewControllerAnimated:(BOOL)animated;
 
 @end

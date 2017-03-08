@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+static NSString *kBaseURL = @"https://uteach-api.herokuapp.com";
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setupNavigationFlowManager];
+    [self setupRequestManager];
+    
+//    [self.requestManager getFacebookAccessToken];
+    
+    
     
     return YES;
 }
@@ -55,6 +62,11 @@
 - (void)setupNavigationFlowManager {
     self.navigationFlowManager = [UTNavigationFlowManager sharedInstance];
     [self.navigationFlowManager presentSplashViewControllerAnimated:NO];
+}
+
+- (void)setupRequestManager {
+    UTRequestConfigs *requestConfigs = [[UTRequestConfigs alloc] initWithBaseURL:kBaseURL];
+    self.requestManager = [[UTRequestManager alloc] initWithConfigs:requestConfigs];
 }
 
 

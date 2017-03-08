@@ -6,6 +6,7 @@ target 'uteach' do
   # use_frameworks!
   
   pod 'FLAnimatedImage', '~> 1.0'
+  pod 'AFNetworking', '~> 3.0'
 
   # Pods for uteach
 
