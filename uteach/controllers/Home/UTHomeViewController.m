@@ -9,6 +9,8 @@
 #import "UTHomeViewController.h"
 
 #import "AppDelegate.h"
+#import "UTModalNotificationViewController.h"
+#import "UTLoginViewController.h"
 
 @interface UTHomeViewController ()
 
@@ -28,7 +30,8 @@
 }
 
 - (IBAction)presentLoginButtonWasTapped:(id)sender {
-    [kNavigationFlowManager presentLoginViewControllerAnimated:YES];
+    [UTModalNotificationViewController showViewController:[[UTLoginViewController alloc] init] onTopOfController:self withNotificationPreviewView:[[UIView alloc] init]];
+//    [kNavigationFlowManager presentLoginViewControllerAnimated:YES];
 }
 
 

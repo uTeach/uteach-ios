@@ -50,7 +50,7 @@
 #pragma mark - Login
 
 - (void)login {
-    [NSTimer scheduledTimerWithTimeInterval:3 repeats:NO block:^(NSTimer * _Nonnull timer) {
+    [NSTimer scheduledTimerWithTimeInterval:0 repeats:NO block:^(NSTimer * _Nonnull timer) {
         [kNavigationFlowManager presentHomeViewControllerAnimated:YES];
     }];
 }

@@ -11,8 +11,9 @@
 #import "UTSplashViewController.h"
 #import "UTHomeViewController.h"
 #import "UTLoginViewController.h"
+#import "UTModalViewController.h"
 
-@interface UTNavigationFlowManager () <UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate>
+@interface UTNavigationFlowManager ()
 
 @end
 
@@ -52,14 +53,15 @@
 - (void)presentLoginViewControllerAnimated:(BOOL)animated {
     UTLoginViewController *loginViewController = [[UTLoginViewController alloc] init];
     
-    loginViewController.transitioningDelegate = self;
-    
-    [self presentViewController:loginViewController animated:animated completion:nil];
-    
+    [self presentModalViewControllerWithInnerViewController:loginViewController];
 }
 
 - (void)presentRegisterViewControllerAnimated:(BOOL)animated {
     NSLog(@"Might be implemeted present register like a popup");    
+}
+
+- (void)presentModalViewControllerWithInnerViewController:(UTViewController *)innerViewController {
+    [UTModalViewController showViewController:innerViewController onTopOfController:[self topMostViewController]];
 }
 
 - (void)presentViewController:(UIViewController *)viewController animated:(BOOL)animated completion:(void (^)(void))completion {
@@ -80,37 +82,6 @@
     }
     
     return topViewController;
-}
-
-#pragma mark - UIViewControllerAnimatedTransitioning
-
-- (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 3;
-}
-
-- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
-    
-}
-
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    UIView *presentingView = presenting.view;
-    UIView *presentedView = presented.view;
-    
-    presenting.view = nil;
-    presented.view = nil;
-    
-    CGFloat presentedViewX = 10;
-    CGFloat presentedViewY = 10;
-    CGFloat presentedViewWidth = presentingView.frame.size.width - 20;
-    CGFloat presentedViewHeight = presentingView.frame.size.height - 20;
-    presentedView.frame = CGRectMake(presentedViewX, presentedViewY, presentedViewWidth, presentedViewHeight);
-    
-    [presentingView addSubview:presentedView];
-    
-    [presentingView bringSubviewToFront:presentedView];
-    presented.view = presentingView;
-    
-    return self;
 }
 
 @end

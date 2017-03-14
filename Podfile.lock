@@ -15,15 +15,18 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - FLAnimatedImage (1.0.12)
+  - FXBlurView (1.6.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - FLAnimatedImage (~> 1.0)
+  - FXBlurView (~> 1.6)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
 
-PODFILE CHECKSUM: b6d34c27b5fb97bfea6e6275c24cb501f3df345b
+PODFILE CHECKSUM: 26f5f8ae314113d1194f352ef4ba6004c83fa5c1
 
 COCOAPODS: 1.1.1

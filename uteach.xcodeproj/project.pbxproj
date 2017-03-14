@@ -36,6 +36,10 @@
 		1D60C48E1E0C665C008DD206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D60C48D1E0C665C008DD206 /* Assets.xcassets */; };
 		1D60C4911E0C665C008DD206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D60C48F1E0C665C008DD206 /* LaunchScreen.storyboard */; };
 		1DE0D7EC1E31A4D6000B246C /* splash_animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D7EB1E31A4D6000B246C /* splash_animation.gif */; };
+		6A1F224E1E77309300C615FD /* UTModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1F224C1E77309300C615FD /* UTModalViewController.m */; };
+		6A1F224F1E77309300C615FD /* UTModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A1F224D1E77309300C615FD /* UTModalViewController.xib */; };
+		6A1F22531E774B1D00C615FD /* UTModalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1F22511E774B1D00C615FD /* UTModalNotificationViewController.m */; };
+		6A1F22541E774B1D00C615FD /* UTModalNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A1F22521E774B1D00C615FD /* UTModalNotificationViewController.xib */; };
 		F1B8146FAE91E34A6815C6C5 /* libPods-uteach.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE19D51D07738601E0DC6C83 /* libPods-uteach.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +94,12 @@
 		1D60C4921E0C665C008DD206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DE0D7EB1E31A4D6000B246C /* splash_animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = splash_animation.gif; sourceTree = "<group>"; };
 		245AD7E557C7E52C01834495 /* Pods-uteach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uteach/Pods-uteach.debug.xcconfig"; sourceTree = "<group>"; };
+		6A1F224B1E77309300C615FD /* UTModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTModalViewController.h; sourceTree = "<group>"; };
+		6A1F224C1E77309300C615FD /* UTModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTModalViewController.m; sourceTree = "<group>"; };
+		6A1F224D1E77309300C615FD /* UTModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTModalViewController.xib; sourceTree = "<group>"; };
+		6A1F22501E774B1D00C615FD /* UTModalNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTModalNotificationViewController.h; sourceTree = "<group>"; };
+		6A1F22511E774B1D00C615FD /* UTModalNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTModalNotificationViewController.m; sourceTree = "<group>"; };
+		6A1F22521E774B1D00C615FD /* UTModalNotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UTModalNotificationViewController.xib; sourceTree = "<group>"; };
 		8AD9D08F9CB8E3C2186B6634 /* Pods-uteach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteach.release.xcconfig"; path = "Pods/Target Support Files/Pods-uteach/Pods-uteach.release.xcconfig"; sourceTree = "<group>"; };
 		DE19D51D07738601E0DC6C83 /* libPods-uteach.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-uteach.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +119,7 @@
 		1D17BC8B1E0C73740099FF76 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6A1F224A1E77307700C615FD /* Modal */,
 				1D1B396E1E3A1D0300F9BD55 /* Register */,
 				1D1B39681E3A1A5100F9BD55 /* Login */,
 				1D259C0B1E10405A00677ED4 /* Splash */,
@@ -316,6 +327,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6A1F224A1E77307700C615FD /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				6A1F224B1E77309300C615FD /* UTModalViewController.h */,
+				6A1F224C1E77309300C615FD /* UTModalViewController.m */,
+				6A1F224D1E77309300C615FD /* UTModalViewController.xib */,
+				6A1F22501E774B1D00C615FD /* UTModalNotificationViewController.h */,
+				6A1F22511E774B1D00C615FD /* UTModalNotificationViewController.m */,
+				6A1F22521E774B1D00C615FD /* UTModalNotificationViewController.xib */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		78472E39866097E9CE635CE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,9 +414,11 @@
 				1D17BC951E0C73870099FF76 /* UTViewController.xib in Resources */,
 				1DE0D7EC1E31A4D6000B246C /* splash_animation.gif in Resources */,
 				1D60C4911E0C665C008DD206 /* LaunchScreen.storyboard in Resources */,
+				6A1F22541E774B1D00C615FD /* UTModalNotificationViewController.xib in Resources */,
 				1D1B396D1E3A1A8800F9BD55 /* UTLoginViewController.xib in Resources */,
 				1D259C111E1040CF00677ED4 /* UTSplashViewController.xib in Resources */,
 				1D17BC9A1E0C73A30099FF76 /* UTNavigationController.xib in Resources */,
+				6A1F224F1E77309300C615FD /* UTModalViewController.xib in Resources */,
 				1D1B39671E3A146A00F9BD55 /* UTHomeViewController.xib in Resources */,
 				1D60C48E1E0C665C008DD206 /* Assets.xcassets in Resources */,
 			);
@@ -454,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60C4861E0C665C008DD206 /* ViewController.m in Sources */,
+				6A1F224E1E77309300C615FD /* UTModalViewController.m in Sources */,
 				1D259C0A1E103FFE00677ED4 /* UIColor+UTColorPalette.m in Sources */,
 				1D1B39661E3A146A00F9BD55 /* UTHomeViewController.m in Sources */,
 				1D17BCC21E0C74000099FF76 /* UTGetRequest.m in Sources */,
@@ -472,6 +499,7 @@
 				1D17BC991E0C73A30099FF76 /* UTNavigationController.m in Sources */,
 				1D17BCC31E0C74000099FF76 /* UTGetJsonRequest.m in Sources */,
 				1D259C101E1040CF00677ED4 /* UTSplashViewController.m in Sources */,
+				6A1F22531E774B1D00C615FD /* UTModalNotificationViewController.m in Sources */,
 				1D17BCC51E0C74000099FF76 /* UTPostJsonRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
