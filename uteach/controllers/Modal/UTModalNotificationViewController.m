@@ -27,6 +27,7 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
 @property (nonatomic) BOOL isModal;
 @property (strong, nonatomic) IBOutlet FXBlurView *blurView;
 @property (strong, nonatomic) UIView *innerView;
+@property (strong, nonatomic) UIView *notificationPreviewView;
 
 @end
 
@@ -39,6 +40,7 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
     
     modalNotificationViewController.topViewController = topViewController;
     modalNotificationViewController.innerViewController = innerViewController;
+    modalNotificationViewController.notificationPreviewView = notificationPreviewView;
     
     modalNotificationViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
     [topViewController addChildViewController:modalNotificationViewController];
@@ -72,8 +74,11 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
 - (void)layoutNotificationView {
     if (self.isModal) {
         self.view.frame = self.topViewController.view.frame;
+        self.innerViewController.view.frame = CGRectMake(0, 0, CGRectGetWidth(self.innerView.frame), CGRectGetHeight(self.innerView.frame));
     } else {
         self.view.frame = CGRectMake(5, self.notificationsViewY, CGRectGetWidth(self.topViewController.view.frame) - 10, 70);
+        self.notificationPreviewView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        
     }
 }
 
@@ -89,7 +94,8 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
     longPressSlideDownGestureRecognizer.minimumPressDuration = 0;
     
     [self.view addGestureRecognizer:longPressSlideDownGestureRecognizer];
-
+    [self.view addSubview:self.notificationPreviewView];
+    [self.view layoutIfNeeded];
 }
 
 #pragma mark - Actions
@@ -122,6 +128,8 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
 }
 
 - (void)presentModalView {
+    [self.notificationPreviewView removeFromSuperview];
+    [self.view layoutIfNeeded];
     self.view.layer.cornerRadius = 0;
     self.blurView.backgroundColor = [UIColor clearColor];
     self.blurView.blurEnabled = YES;
@@ -138,6 +146,14 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
     [self.view addSubview:modalView];
     
     [self layoutNotificationView];
+    
+    [self addChildViewController:self.innerViewController];
+    [self.innerView addSubview:self.innerViewController.view];
+    
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;
+    [self.topViewController addChildViewController:self];
+    [self.topViewController.view addSubview:self.view];
+
     
     [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         self.blurView.blurRadius = kModalNotifiactionViewControllerBlurRadius;
@@ -170,7 +186,6 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
         [self.innerViewController removeFromParentViewController];
         [self.view removeFromSuperview];
         [self removeFromParentViewController];
-        
     }];
 }
 

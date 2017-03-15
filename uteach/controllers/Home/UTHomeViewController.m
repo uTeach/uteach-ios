@@ -30,7 +30,12 @@
 }
 
 - (IBAction)presentLoginButtonWasTapped:(id)sender {
-    [UTModalNotificationViewController showViewController:[[UTLoginViewController alloc] init] onTopOfController:self withNotificationPreviewView:[[UIView alloc] init]];
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = [UIColor redColor];
+    
+    [UTModalNotificationViewController showViewController:[[UTLoginViewController alloc] init] onTopOfController:self withNotificationPreviewView:view];
+    
+    
 //    [kNavigationFlowManager presentLoginViewControllerAnimated:YES];
 }
 
