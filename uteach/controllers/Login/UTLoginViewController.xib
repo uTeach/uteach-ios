@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="435"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6YY-10-1vj">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_placeholder_default" translatesAutoresizingMaskIntoConstraints="NO" id="6YY-10-1vj">
                     <rect key="frame" x="152" y="20" width="70" height="70"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="6YY-10-1vj" secondAttribute="height" multiplier="1:1" id="6IZ-sr-i4h"/>
@@ -57,4 +57,7 @@
             <point key="canvasLocation" x="31.5" y="39.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="icon_placeholder_default" width="128" height="128"/>
+    </resources>
 </document>
