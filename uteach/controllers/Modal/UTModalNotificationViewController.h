@@ -11,5 +11,9 @@
 @interface UTModalNotificationViewController : UIViewController
 
 + (instancetype)showViewController:(UIViewController *)innerViewController onTopOfController:(UIViewController *)topViewController withNotificationPreviewView:(UIView *)notificationPreviewView;
+- (void)dismissModalNotificationViewController;
+
+- (void)setInnerViewWidth:(CGFloat)innerViewWidth height:(CGFloat)innerViewHeight;
+
 
 @end

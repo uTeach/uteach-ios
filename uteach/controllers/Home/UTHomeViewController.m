@@ -33,8 +33,14 @@
     UIView *view = [[UIView alloc] init];
     view.backgroundColor = [UIColor redColor];
     
-    [UTModalNotificationViewController showViewController:[[UTLoginViewController alloc] init] onTopOfController:self withNotificationPreviewView:view];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[UTLoginViewController alloc] init]];
     
+    [navigationController pushViewController:[[UIViewController alloc] init] animated:NO];
+    UTModalNotificationViewController *modalNotificationController = [UTModalNotificationViewController showViewController:navigationController onTopOfController:self withNotificationPreviewView:view];
+    
+    [NSTimer scheduledTimerWithTimeInterval:3 repeats:NO block:^(NSTimer * _Nonnull timer) {
+        [modalNotificationController dismissModalNotificationViewController];
+    }];
     
 //    [kNavigationFlowManager presentLoginViewControllerAnimated:YES];
 }

@@ -29,6 +29,9 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
 @property (strong, nonatomic) UIView *innerView;
 @property (strong, nonatomic) UIView *notificationPreviewView;
 
+@property (nonatomic) CGFloat innerViewWidth;
+@property (nonatomic) CGFloat innerViewHeight;
+
 @end
 
 @implementation UTModalNotificationViewController
@@ -41,6 +44,8 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
     modalNotificationViewController.topViewController = topViewController;
     modalNotificationViewController.innerViewController = innerViewController;
     modalNotificationViewController.notificationPreviewView = notificationPreviewView;
+    modalNotificationViewController.innerViewWidth = 250;
+    modalNotificationViewController.innerViewHeight = 400;
     
     modalNotificationViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
     [topViewController addChildViewController:modalNotificationViewController];
@@ -82,6 +87,15 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
     }
 }
 
+- (void)layoutInnerView {
+    CGFloat innerViewX = (self.topViewController.view.frame.size.width - self.innerViewWidth) / 2.0;
+    CGFloat innerViewY = (self.topViewController.view.frame.size.height - self.innerViewHeight) / 2.0;
+    CGFloat innerViewWidth = self.innerViewWidth;
+    CGFloat innerViewHeight = self.innerViewHeight;
+    
+    self.innerView.frame = CGRectMake(innerViewX, innerViewY, innerViewWidth, innerViewHeight);
+}
+
 #pragma mark - Setup
 
 - (void)setupView {
@@ -96,6 +110,15 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
     [self.view addGestureRecognizer:longPressSlideDownGestureRecognizer];
     [self.view addSubview:self.notificationPreviewView];
     [self.view layoutIfNeeded];
+}
+
+#pragma mark - Setters
+
+- (void)setInnerViewWidth:(CGFloat)innerViewWidth height:(CGFloat)innerViewHeight {
+    _innerViewWidth = innerViewWidth;
+    _innerViewHeight = innerViewHeight;
+    
+    [self layoutInnerView];
 }
 
 #pragma mark - Actions
@@ -129,7 +152,6 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
 
 - (void)presentModalView {
     [self.notificationPreviewView removeFromSuperview];
-    [self.view layoutIfNeeded];
     self.view.layer.cornerRadius = 0;
     self.blurView.backgroundColor = [UIColor clearColor];
     self.blurView.blurEnabled = YES;
@@ -157,7 +179,7 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
     
     [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         self.blurView.blurRadius = kModalNotifiactionViewControllerBlurRadius;
-        modalView.frame = CGRectMake(20, 100, self.topViewController.view.frame.size.width - 40, self.topViewController.view.frame.size.height - 200);
+        [self layoutInnerView];
     } completion:nil];
 }
 
@@ -175,6 +197,17 @@ const CGFloat kModalNotificationViewControllerNotificationYDefault = 30;
         [self layoutNotificationView];
         
     } completion:nil];
+}
+
+
+- (void)dismissModalNotificationViewController {
+    if (!self.isModal) {
+        [UIView animateWithDuration:kModalNotifiactionViewControllerPresentationTransitioning animations:^{
+            self.view.frame = CGRectMake(self.view.frame.origin.x, -self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height);
+        } completion:^(BOOL finished) {
+            [self removeFromParentViewController];
+        }];
+    }
 }
 
 - (void)closeModal:(id)sender {
